@@ -10,17 +10,17 @@ using System.Windows.Forms;
 
 namespace Lab_Form
 {
-    public partial class Frm_HelloForm : Form
+    public partial class Frm_M04 : Form
     {
-        public Frm_HelloForm()
+        public Frm_M04()
         {
             InitializeComponent();
         }
 
-        private void btnHello_Click(object sender, EventArgs e)
+        private void btnOpenHelloForm_Click(object sender, EventArgs e)
         {
-            string name = txtName.Text;
-            MessageBox.Show($"Hello {name} !");
+            Frm_HelloForm hello = new Frm_HelloForm();
+            hello.Show();
         }
     }
 }

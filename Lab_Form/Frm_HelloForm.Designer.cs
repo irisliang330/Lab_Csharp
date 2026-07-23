@@ -48,7 +48,7 @@
             this.labName.Size = new System.Drawing.Size(68, 12);
             this.labName.TabIndex = 1;
             this.labName.Text = "請輸入姓名:";
-            this.labName.Click += new System.EventHandler(this.label1_Click);
+            
             // 
             // btnHello
             // 

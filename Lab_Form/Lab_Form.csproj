@@ -33,9 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="System">
-      <HintPath>..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
-    </Reference>
+    <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -54,10 +52,19 @@
     <Compile Include="Frm_HelloForm.Designer.cs">
       <DependentUpon>Frm_HelloForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Frm_M04.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_M04.Designer.cs">
+      <DependentUpon>Frm_M04.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Frm_HelloForm.resx">
       <DependentUpon>Frm_HelloForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_M04.resx">
+      <DependentUpon>Frm_M04.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -68,6 +75,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="README.md" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
