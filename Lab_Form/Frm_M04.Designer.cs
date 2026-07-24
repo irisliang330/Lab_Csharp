@@ -33,6 +33,10 @@
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.NewMember = new System.Windows.Forms.Button();
+            this.btnDataBinding = new System.Windows.Forms.Button();
+            this.btnRegitster01 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnOpenHelloForm
@@ -85,11 +89,54 @@
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(53, 310);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(75, 23);
+            this.button4.TabIndex = 5;
+            this.button4.Text = "Partial Class";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // NewMember
+            // 
+            this.NewMember.Location = new System.Drawing.Point(33, 353);
+            this.NewMember.Name = "NewMember";
+            this.NewMember.Size = new System.Drawing.Size(125, 23);
+            this.NewMember.TabIndex = 6;
+            this.NewMember.Text = "New Member";
+            this.NewMember.UseVisualStyleBackColor = true;
+            this.NewMember.Click += new System.EventHandler(this.NewMember_Click);
+            // 
+            // btnDataBinding
+            // 
+            this.btnDataBinding.Location = new System.Drawing.Point(394, 118);
+            this.btnDataBinding.Name = "btnDataBinding";
+            this.btnDataBinding.Size = new System.Drawing.Size(75, 23);
+            this.btnDataBinding.TabIndex = 7;
+            this.btnDataBinding.Text = "資料繫結";
+            this.btnDataBinding.UseVisualStyleBackColor = true;
+            this.btnDataBinding.Click += new System.EventHandler(this.btnDataBinding_Click);
+            // 
+            // btnRegitster01
+            // 
+            this.btnRegitster01.Location = new System.Drawing.Point(394, 165);
+            this.btnRegitster01.Name = "btnRegitster01";
+            this.btnRegitster01.Size = new System.Drawing.Size(118, 23);
+            this.btnRegitster01.TabIndex = 8;
+            this.btnRegitster01.Text = "RegisterEvent01";
+            this.btnRegitster01.UseVisualStyleBackColor = true;
+            // 
             // Frm_M04
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnRegitster01);
+            this.Controls.Add(this.btnDataBinding);
+            this.Controls.Add(this.NewMember);
+            this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
@@ -108,5 +155,9 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button NewMember;
+        private System.Windows.Forms.Button btnDataBinding;
+        private System.Windows.Forms.Button btnRegitster01;
     }
 }

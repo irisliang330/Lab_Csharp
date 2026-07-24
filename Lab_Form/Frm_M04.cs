@@ -21,7 +21,7 @@ namespace Lab_Form
         {
             Frm_HelloForm hello = new Frm_HelloForm();
             hello.Show();
-            
+
         }
 
         private void btnMethod_Click(object sender, EventArgs e)
@@ -58,13 +58,66 @@ namespace Lab_Form
             return $"出生年是{birthYear}年";
 
         }
-
         private void button3_Click(object sender, EventArgs e)
         {
             MyClass mc02 = new MyClass();
-            mc02.Methdo03Internal();
-            mc02.Methdo04Public();
-            mc02.Methdo05CallMethod01And02();
+            mc02.Methdod03Internal();
+            mc02.Method04Public();
+            mc02.Method05CallMethod01And02();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            MyClass mcPartial = new MyClass();
+            mcPartial.Method06PartialClass();
+            mcPartial.Methdod03Internal();
+            mcPartial.Method04Public();
+            mcPartial.Method05CallMethod01And02();
+        }
+
+        public void NewMember_Click(object sender, EventArgs e)
+        {
+            //initialize-1
+            MemberData memberData01 = new MemberData(); //create instance
+            memberData01.Name = "John";
+            memberData01.PhoneNumber = "1234567890";
+            memberData01.BirthDate = new DateTime(1990, 8, 20);
+
+            //initialize-2
+            MemberData memberData02 = new MemberData()
+            {
+                Name = "Alice",
+                PhoneNumber = "1234567890",
+                BirthDate = new DateTime(1980, 1, 1)
+            };
+
+            //output
+            MessageBox.Show(
+                $"會員01姓名:{memberData01.Name}\n" +
+                $"會員01電話:{memberData01.PhoneNumber}\n" +
+                $"會員01生日:{memberData01.BirthDate}" +
+                "\n" +
+                $"會員02姓名:{memberData02.Name}\n" +
+                $"會員02電話:{memberData02.PhoneNumber}\n" +
+                $"會員02生日:{memberData02.BirthDate}");
+
+            MessageBox.Show(
+                string.Format(
+                "會員姓名:{0}\n會員電話:{1}\n會員生日:{2}",
+                memberData01.Name,
+                memberData01.PhoneNumber,
+                memberData01.BirthDate));
+        }
+
+        // Binding Event and Method
+        private void btnDataBinding_Click(object sender, EventArgs e)
+        {
+            //from Designer.cs
+            //this.btnHello.Click += new System.EventHandler(this.btnHello_Click);
+            btnRegitster01.Click += new EventHandler(RegisterEvent01_Click);
+        }
+        private void RegisterEvent01_Click(object sender, EventArgs e) {
+            MessageBox.Show("Registor Event 事件繫結");
         }
     }
 }
