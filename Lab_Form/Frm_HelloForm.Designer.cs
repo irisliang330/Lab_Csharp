@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_HelloForm));
             this.txtName = new System.Windows.Forms.TextBox();
             this.labName = new System.Windows.Forms.Label();
             this.btnHello = new System.Windows.Forms.Button();
@@ -35,40 +36,52 @@
             // 
             // txtName
             // 
-            this.txtName.Location = new System.Drawing.Point(28, 50);
+            this.txtName.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.txtName.Location = new System.Drawing.Point(373, 378);
+            this.txtName.Margin = new System.Windows.Forms.Padding(9);
             this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(100, 22);
+            this.txtName.Size = new System.Drawing.Size(153, 45);
             this.txtName.TabIndex = 0;
             // 
             // labName
             // 
             this.labName.AutoSize = true;
-            this.labName.Location = new System.Drawing.Point(26, 35);
+            this.labName.BackColor = System.Drawing.Color.Transparent;
+            this.labName.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.labName.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.labName.Location = new System.Drawing.Point(193, 381);
+            this.labName.Margin = new System.Windows.Forms.Padding(9, 0, 9, 0);
             this.labName.Name = "labName";
-            this.labName.Size = new System.Drawing.Size(68, 12);
+            this.labName.Size = new System.Drawing.Size(162, 36);
             this.labName.TabIndex = 1;
             this.labName.Text = "請輸入姓名:";
-            
             // 
             // btnHello
             // 
-            this.btnHello.Location = new System.Drawing.Point(28, 78);
+            this.btnHello.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnHello.ForeColor = System.Drawing.SystemColors.MenuBar;
+            this.btnHello.Location = new System.Drawing.Point(262, 441);
+            this.btnHello.Margin = new System.Windows.Forms.Padding(9);
             this.btnHello.Name = "btnHello";
-            this.btnHello.Size = new System.Drawing.Size(75, 23);
+            this.btnHello.Size = new System.Drawing.Size(213, 69);
             this.btnHello.TabIndex = 2;
             this.btnHello.Text = "Hello";
-            this.btnHello.UseVisualStyleBackColor = true;
+            this.btnHello.UseVisualStyleBackColor = false;
             this.btnHello.Click += new System.EventHandler(this.btnHello_Click);
             // 
             // Frm_HelloForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(17F, 36F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(210, 126);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.ClientSize = new System.Drawing.Size(1038, 544);
             this.Controls.Add(this.btnHello);
             this.Controls.Add(this.labName);
             this.Controls.Add(this.txtName);
+            this.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.Margin = new System.Windows.Forms.Padding(9);
             this.Name = "Frm_HelloForm";
             this.Text = "Hello Form";
             this.ResumeLayout(false);

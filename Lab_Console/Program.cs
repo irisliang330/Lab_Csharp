@@ -13,12 +13,11 @@ namespace Lab_Console
             Frm_HelloForm hello = new Frm_HelloForm();
             hello.Show();
 
-            Console.WriteLine("Hello Csharp !");
-            Console.Write("請輸入姓名:");
-            string name = Console.ReadLine();
-            Console.WriteLine($"Hello ! {name}!");
-            Frm_HelloForm(name);
-
+            //Console.WriteLine("Hello Csharp !");
+            //Console.Write("請輸入姓名:");
+            //string name = Console.ReadLine();
+            //Console.WriteLine($"Hello ! {name}!");
+            //Frm_HelloForm(name);
         }
 
         private static void Frm_HelloForm(string name)
