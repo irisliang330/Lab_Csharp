@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.btnOpenHelloForm = new System.Windows.Forms.Button();
+            this.btnMethod = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnOpenHelloForm
@@ -41,11 +42,22 @@
             this.btnOpenHelloForm.UseVisualStyleBackColor = true;
             this.btnOpenHelloForm.Click += new System.EventHandler(this.btnOpenHelloForm_Click);
             // 
+            // btnMethod
+            // 
+            this.btnMethod.Location = new System.Drawing.Point(53, 135);
+            this.btnMethod.Name = "btnMethod";
+            this.btnMethod.Size = new System.Drawing.Size(75, 23);
+            this.btnMethod.TabIndex = 1;
+            this.btnMethod.Text = "Method";
+            this.btnMethod.UseVisualStyleBackColor = true;
+            this.btnMethod.Click += new System.EventHandler(this.btnMethod_Click);
+            // 
             // Frm_M04
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnMethod);
             this.Controls.Add(this.btnOpenHelloForm);
             this.Name = "Frm_M04";
             this.Text = "Frm_M04";
@@ -56,5 +68,6 @@
         #endregion
 
         private System.Windows.Forms.Button btnOpenHelloForm;
+        private System.Windows.Forms.Button btnMethod;
     }
 }

@@ -21,6 +21,19 @@ namespace Lab_Form
         {
             Frm_HelloForm hello = new Frm_HelloForm();
             hello.Show();
+            
+        }
+
+        private void btnMethod_Click(object sender, EventArgs e)
+        {
+
+            MyMethod();
+
+        }
+        void MyMethod()
+        {
+            string name = "有颱風";
+            MessageBox.Show($"我是{name}");
         }
     }
 }
