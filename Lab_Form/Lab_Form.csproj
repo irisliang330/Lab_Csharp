@@ -58,6 +58,7 @@
     <Compile Include="Frm_M04.Designer.cs">
       <DependentUpon>Frm_M04.cs</DependentUpon>
     </Compile>
+    <Compile Include="MyClass.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Frm_HelloForm.resx">

@@ -35,5 +35,11 @@ namespace Lab_Form
             string name = "有颱風";
             MessageBox.Show($"我是{name}");
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MyClass mc = new MyClass();
+            mc.MyNewMethod();
+        }
     }
 }
