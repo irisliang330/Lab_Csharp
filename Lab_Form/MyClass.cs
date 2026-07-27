@@ -9,30 +9,31 @@ namespace Lab_Form
 {
     public partial class MyClass
     {
-        internal void MyNewMethod()
+        internal void UsingDiffClassMethod()
         {
             MessageBox.Show("呼叫不同類別方法");
         }
 
         void Method01Default() {
-            MessageBox.Show("default method is private");
+            MessageBox.Show("Method 01 : default method in Class is private");
         }
 
         private void Method02Private() { 
-            MessageBox.Show("private method is private");
+            MessageBox.Show("Method 02 : private method is private");
         }
-        internal void Methdod03Internal()
+        internal void Method03Internal()
         {
-            MessageBox.Show("internal method is internal");
+            MessageBox.Show("Method 03 : internal method is internal");
         }
 
         public void Method04Public()
         {
-            MessageBox.Show("public method is public");
+            MessageBox.Show("Method 04 : public method is public");
         }
 
         public void Method05CallMethod01And02() {
-            
+
+            MessageBox.Show("Method 05 : callout Method 01 & 02");
             Method01Default();
             Method02Private();
 

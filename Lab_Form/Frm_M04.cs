@@ -17,6 +17,7 @@ namespace Lab_Form
             InitializeComponent();
         }
 
+        //HelloForm
         private void btnOpenHelloForm_Click(object sender, EventArgs e)
         {
             Frm_HelloForm hello = new Frm_HelloForm();
@@ -24,24 +25,24 @@ namespace Lab_Form
 
         }
 
-        private void btnMethod_Click(object sender, EventArgs e)
-        {
-
-            MyMethod();
-
-        }
-
         //無回傳值的Method
-        void MyMethod()
+
+        private void btnUsingVoidMethod_Click(object sender, EventArgs e)
         {
-            string name = "有颱風";
+            usingVoidMethod();
+        }
+        
+        void usingVoidMethod()
+        {
+            string name = "紅霞颱風";
             MessageBox.Show($"我是{name}");
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        //呼叫其他Class的Method
+        private void btnUsingDiffClassMethod_Click(object sender, EventArgs e)
         {
             MyClass mc = new MyClass();
-            mc.MyNewMethod();
+            mc.UsingDiffClassMethod();
         }
 
 
@@ -58,10 +59,12 @@ namespace Lab_Form
             return $"出生年是{birthYear}年";
 
         }
+
+        //Encapsulation Practice
         private void button3_Click(object sender, EventArgs e)
         {
             MyClass mc02 = new MyClass();
-            mc02.Methdod03Internal();
+            mc02.Method03Internal();
             mc02.Method04Public();
             mc02.Method05CallMethod01And02();
         }
@@ -70,11 +73,12 @@ namespace Lab_Form
         {
             MyClass mcPartial = new MyClass();
             mcPartial.Method06PartialClass();
-            mcPartial.Methdod03Internal();
+            mcPartial.Method03Internal();
             mcPartial.Method04Public();
             mcPartial.Method05CallMethod01And02();
         }
 
+        //Initialize Practice - MemberData
         public void NewMember_Click(object sender, EventArgs e)
         {
             //initialize-1

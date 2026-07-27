@@ -59,6 +59,9 @@
       <DependentUpon>Frm_M04.cs</DependentUpon>
     </Compile>
     <Compile Include="MyClass.cs" />
+    <Compile Include="MyStyledButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="PartialClass.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
