@@ -53,18 +53,33 @@ namespace Lab_Form
 
         int preCount = 0;
         int postCount = 0;
+        int preB;
+        int postB;
         private void btnPre_Click(object sender, EventArgs e)
         {
-            int preB = ++preCount;
+            preB = ++preCount;
             labPre.Text = $"PreB:{preB}";
             labPreCount.Text = $"PreCount:{preCount}";
         }
 
         private void btnPost_Click(object sender, EventArgs e)
         {
-            int postB = postCount++;
+            postB = postCount++;
             labPost.Text = $"PostB:{postB}";
             labPostCount.Text = $"PostCount:{postCount}";
+        }
+
+        //instance var vs static var
+        StaticLab sl = new StaticLab();
+        private void btnInstance_Click(object sender, EventArgs e)
+        {
+            sl.instanceCount++;
+            labInstanceCount.Text = $"Instance Count :{sl.instanceCount}";
+        }
+        private void btnStatic_Click(object sender, EventArgs e)
+        {
+            StaticLab.staticCount++;
+            labStaticCount.Text = $"Static Count :{StaticLab.staticCount}";
         }
     }
 }

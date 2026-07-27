@@ -22,7 +22,12 @@ namespace Lab_Form
             string name = txtName.Text;
             MessageBox.Show($"Hello {name} !");
 
-            //9-12 DialogResult
+            ////todo 9 - 12 DialogResult
+            //DialogResult result = Frm_HelloForm.ShowDialog();
+            //if (result == DialogResult.OK)
+            //{
+            //    MessageBox.Show("OK");
+            //}
         }
 
         // using Message to catch user's DialogResult
@@ -49,5 +54,7 @@ namespace Lab_Form
 
 
         }
+
+
     }
 }

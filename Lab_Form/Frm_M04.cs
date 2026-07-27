@@ -132,11 +132,12 @@ namespace Lab_Form
             MessageBox.Show("Registor Event 事件繫結02");
         }
 
-
-
         private void btnRegisterEvent01_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Registor Event 事件繫結01");
+
+            //test static var
+            MessageBox.Show($"{StaticLab.staticCount}");
         }
 
         //Using Delegate
@@ -171,5 +172,9 @@ namespace Lab_Form
             decimal priceB = originPrice * Convert.ToDecimal(0.6);
             return priceB;
         }
+
+        //test static var
+
+
     }
 }

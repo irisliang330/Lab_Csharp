@@ -40,6 +40,10 @@
             this.btnPost = new System.Windows.Forms.Button();
             this.labPostCount = new System.Windows.Forms.Label();
             this.labPreCount = new System.Windows.Forms.Label();
+            this.labStaticCount = new System.Windows.Forms.Label();
+            this.labInstanceCount = new System.Windows.Forms.Label();
+            this.btnStatic = new System.Windows.Forms.Button();
+            this.btnInstance = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnCount
@@ -169,11 +173,57 @@
             this.labPreCount.TabIndex = 10;
             this.labPreCount.Text = "PreCount : 0";
             // 
+            // labStaticCount
+            // 
+            this.labStaticCount.AutoSize = true;
+            this.labStaticCount.Font = new System.Drawing.Font("微軟正黑體", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.labStaticCount.Location = new System.Drawing.Point(429, 323);
+            this.labStaticCount.Name = "labStaticCount";
+            this.labStaticCount.Size = new System.Drawing.Size(119, 19);
+            this.labStaticCount.TabIndex = 15;
+            this.labStaticCount.Text = "Static Count : 0";
+            // 
+            // labInstanceCount
+            // 
+            this.labInstanceCount.AutoSize = true;
+            this.labInstanceCount.Font = new System.Drawing.Font("微軟正黑體", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.labInstanceCount.Location = new System.Drawing.Point(429, 294);
+            this.labInstanceCount.Name = "labInstanceCount";
+            this.labInstanceCount.Size = new System.Drawing.Size(139, 19);
+            this.labInstanceCount.TabIndex = 14;
+            this.labInstanceCount.Text = "Instance Count : 0";
+            // 
+            // btnStatic
+            // 
+            this.btnStatic.Font = new System.Drawing.Font("微軟正黑體", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.btnStatic.Location = new System.Drawing.Point(259, 319);
+            this.btnStatic.Name = "btnStatic";
+            this.btnStatic.Size = new System.Drawing.Size(132, 23);
+            this.btnStatic.TabIndex = 13;
+            this.btnStatic.Text = "Static var";
+            this.btnStatic.UseVisualStyleBackColor = true;
+            this.btnStatic.Click += new System.EventHandler(this.btnStatic_Click);
+            // 
+            // btnInstance
+            // 
+            this.btnInstance.Font = new System.Drawing.Font("微軟正黑體", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.btnInstance.Location = new System.Drawing.Point(259, 290);
+            this.btnInstance.Name = "btnInstance";
+            this.btnInstance.Size = new System.Drawing.Size(132, 23);
+            this.btnInstance.TabIndex = 12;
+            this.btnInstance.Text = "Instance var";
+            this.btnInstance.UseVisualStyleBackColor = true;
+            this.btnInstance.Click += new System.EventHandler(this.btnInstance_Click);
+            // 
             // Frm_M11
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.labStaticCount);
+            this.Controls.Add(this.labInstanceCount);
+            this.Controls.Add(this.btnStatic);
+            this.Controls.Add(this.btnInstance);
             this.Controls.Add(this.labPostCount);
             this.Controls.Add(this.labPreCount);
             this.Controls.Add(this.labPost);
@@ -207,5 +257,9 @@
         private System.Windows.Forms.Button btnPost;
         private System.Windows.Forms.Label labPostCount;
         private System.Windows.Forms.Label labPreCount;
+        private System.Windows.Forms.Label labStaticCount;
+        private System.Windows.Forms.Label labInstanceCount;
+        private System.Windows.Forms.Button btnStatic;
+        private System.Windows.Forms.Button btnInstance;
     }
 }

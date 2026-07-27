@@ -12,4 +12,11 @@ namespace Lab_Form
         public string PhoneNumber;
         public DateTime BirthDate;
     }
+
+    // instance var vs static var
+    public class StaticLab
+    {
+        public int instanceCount;
+        public static int staticCount;
+    }
 }
