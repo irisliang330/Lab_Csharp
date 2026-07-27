@@ -23,7 +23,7 @@ namespace Lab_Form
             Frm_HelloForm hello = new Frm_HelloForm();
             //hello.Show();
 
-            //todo 9-12 DialogResult
+            //9-12 DialogResult
             DialogResult result = hello.ShowDialog();
 
             if (result == DialogResult.OK)
@@ -37,10 +37,10 @@ namespace Lab_Form
 
         private void btnUsingVoidMethod_Click(object sender, EventArgs e)
         {
-            usingVoidMethod();
+            UsingVoidMethod();
         }
         
-        void usingVoidMethod()
+        void UsingVoidMethod()
         {
             string name = "紅霞颱風";
             MessageBox.Show($"我是{name}");
@@ -126,7 +126,7 @@ namespace Lab_Form
         {
             //from Designer.cs
             //this.btnHello.Click += new System.EventHandler(this.btnHello_Click);
-            btnRegitster01.Click += new EventHandler(btnRegisterEvent01_Click);
+            btnRegisterEvent01.Click += new EventHandler(btnRegisterEvent01_Click);
             btnRegisterEvent02.Click += btnRegisterEvent02_Click;
             btnRegisterEvent02.Click += btnRegisterEvent01_Click;
 
@@ -141,12 +141,12 @@ namespace Lab_Form
 
         private void btnRegisterEvent02_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Registor Event 事件繫結02");
+            MessageBox.Show("Register Event 繫結02");
         }
 
         private void btnRegisterEvent01_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Registor Event 事件繫結01");
+            MessageBox.Show("Register Event 繫結01");
 
             //test static var
             MessageBox.Show($"{StaticLab.staticCount}");
@@ -184,8 +184,6 @@ namespace Lab_Form
             decimal priceB = originPrice * Convert.ToDecimal(0.6);
             return priceB;
         }
-
-        //test static var
 
 
     }
