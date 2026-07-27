@@ -16,7 +16,13 @@ namespace Lab_Form
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+
+            //entry point
+            //Application.Run(new Frm_M11());
             Application.Run(new Frm_M04());
+            //Application.Run(new Frm_HelloForm());
+
+
         }
     }
 }

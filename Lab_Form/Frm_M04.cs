@@ -21,7 +21,15 @@ namespace Lab_Form
         private void btnOpenHelloForm_Click(object sender, EventArgs e)
         {
             Frm_HelloForm hello = new Frm_HelloForm();
-            hello.Show();
+            //hello.Show();
+
+            //todo 9-12 DialogResult
+            DialogResult result = hello.ShowDialog();
+
+            if (result == DialogResult.OK)
+            {
+                MessageBox.Show("OK");
+            }
 
         }
 
@@ -118,10 +126,67 @@ namespace Lab_Form
         {
             //from Designer.cs
             //this.btnHello.Click += new System.EventHandler(this.btnHello_Click);
-            btnRegitster01.Click += new EventHandler(RegisterEvent01_Click);
+            btnRegitster01.Click += new EventHandler(btnRegisterEvent01_Click);
+            btnRegisterEvent02.Click += btnRegisterEvent02_Click;
+            btnRegisterEvent02.Click += btnRegisterEvent01_Click;
+
+            //cant bind with click event if dont match delegate
+            //btnRegisterEvent02.Click += MyString; 
         }
-        private void RegisterEvent01_Click(object sender, EventArgs e) {
-            MessageBox.Show("Registor Event 事件繫結");
+
+        //string MyString()
+        //{
+        //    return "";
+        //}
+
+        private void btnRegisterEvent02_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Registor Event 事件繫結02");
         }
+
+        private void btnRegisterEvent01_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Registor Event 事件繫結01");
+
+            //test static var
+            MessageBox.Show($"{StaticLab.staticCount}");
+        }
+
+        //Using Delegate
+
+        private void btnDelegate_Click(object sender, EventArgs e)
+        {
+            Payment pay;
+            if (DateTime.Now.Minute %2 == 0)
+            {
+                pay = PriceA;    
+            }
+            else
+            {
+                pay = PriceB;
+            }
+
+            decimal amount = decimal.Parse(txtPrice.Text);
+            decimal result = pay(amount);
+            MessageBox.Show($"{result}");
+        }
+
+        //declare delegate
+        delegate decimal Payment(decimal amount);
+
+        decimal PriceA(decimal originPrice)
+        {
+            decimal priceA = originPrice * Convert.ToDecimal(0.8);
+            return priceA;
+        }
+        decimal PriceB(decimal originPrice)
+        {
+            decimal priceB = originPrice * Convert.ToDecimal(0.6);
+            return priceB;
+        }
+
+        //test static var
+
+
     }
 }
