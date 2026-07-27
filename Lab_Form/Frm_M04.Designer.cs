@@ -39,7 +39,7 @@
             this.btnRegisterEvent01 = new System.Windows.Forms.Button();
             this.btnRegisterEvent02 = new System.Windows.Forms.Button();
             this.btnDelegate = new System.Windows.Forms.Button();
-            this.txtPrice = new System.Windows.Forms.TextBox();
+            this.txtDelegateInputPrice = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // btnOpenHelloForm
@@ -205,18 +205,19 @@
             this.btnDelegate.UseVisualStyleBackColor = false;
             this.btnDelegate.Click += new System.EventHandler(this.btnDelegate_Click);
             // 
-            // txtPrice
+            // txtDelegateInputPrice
             // 
-            this.txtPrice.BackColor = System.Drawing.Color.Azure;
-            this.txtPrice.Font = new System.Drawing.Font("微軟正黑體", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.txtPrice.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.txtPrice.Location = new System.Drawing.Point(573, 514);
-            this.txtPrice.Margin = new System.Windows.Forms.Padding(5);
-            this.txtPrice.Name = "txtPrice";
-            this.txtPrice.Size = new System.Drawing.Size(418, 42);
-            this.txtPrice.TabIndex = 11;
-            this.txtPrice.Text = "Input Price";
-            this.txtPrice.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtDelegateInputPrice.BackColor = System.Drawing.Color.Azure;
+            this.txtDelegateInputPrice.Font = new System.Drawing.Font("微軟正黑體", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.txtDelegateInputPrice.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.txtDelegateInputPrice.Location = new System.Drawing.Point(573, 514);
+            this.txtDelegateInputPrice.Margin = new System.Windows.Forms.Padding(5);
+            this.txtDelegateInputPrice.Name = "txtDelegateInputPrice";
+            this.txtDelegateInputPrice.Size = new System.Drawing.Size(418, 42);
+            this.txtDelegateInputPrice.TabIndex = 11;
+            this.txtDelegateInputPrice.Tag = "";
+            this.txtDelegateInputPrice.Text = "1000";
+            this.txtDelegateInputPrice.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // Frm_M04
             // 
@@ -224,7 +225,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(1593, 1026);
-            this.Controls.Add(this.txtPrice);
+            this.Controls.Add(this.txtDelegateInputPrice);
             this.Controls.Add(this.btnDelegate);
             this.Controls.Add(this.btnRegisterEvent02);
             this.Controls.Add(this.btnRegisterEvent01);
@@ -238,7 +239,7 @@
             this.Controls.Add(this.btnOpenHelloForm);
             this.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.Name = "Frm_M04";
-            this.Text = " ";
+            this.Text = " Frm_M04";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -257,6 +258,6 @@
         private System.Windows.Forms.Button btnRegisterEvent01;
         private System.Windows.Forms.Button btnRegisterEvent02;
         private System.Windows.Forms.Button btnDelegate;
-        private System.Windows.Forms.TextBox txtPrice;
+        private System.Windows.Forms.TextBox txtDelegateInputPrice;
     }
 }

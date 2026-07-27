@@ -166,7 +166,7 @@ namespace Lab_Form
                 pay = PriceB;
             }
 
-            decimal amount = decimal.Parse(txtPrice.Text);
+            decimal amount = decimal.Parse(txtDelegateInputPrice.Text);
             decimal result = pay(amount);
             MessageBox.Show($"{result}");
         }
