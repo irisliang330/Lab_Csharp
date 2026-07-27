@@ -23,8 +23,7 @@ namespace Lab_Form
             MessageBox.Show($"Hello {name} !");
             this.Text = name;
 
-            //using DialogResult
-            this.DialogResult = DialogResult.OK;
+
         }
 
         // using Message to catch user's DialogResult
@@ -55,6 +54,13 @@ namespace Lab_Form
         private void btnTestStaticVar_Click(object sender, EventArgs e)
         {
             MessageBox.Show($"{StaticLab.staticCount}");
+        }
+
+        //9-12 using DialogResult
+        private void Frm_HelloForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            
+            this.DialogResult = DialogResult.OK;
         }
     }
 }

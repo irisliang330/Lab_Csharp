@@ -61,6 +61,7 @@
             // btnHello
             // 
             this.btnHello.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnHello.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnHello.Font = new System.Drawing.Font("微軟正黑體", 9.857143F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.btnHello.ForeColor = System.Drawing.SystemColors.MenuBar;
             this.btnHello.Location = new System.Drawing.Point(28, 329);
@@ -113,6 +114,7 @@
             this.Margin = new System.Windows.Forms.Padding(9);
             this.Name = "Frm_HelloForm";
             this.Text = "Hello Form";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Frm_HelloForm_FormClosed);
             this.ResumeLayout(false);
             this.PerformLayout();
 

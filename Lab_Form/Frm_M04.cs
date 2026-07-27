@@ -23,7 +23,8 @@ namespace Lab_Form
             Frm_HelloForm hello = new Frm_HelloForm();
             //hello.Show();
 
-            //9-12 DialogResult
+            //9-12 using DialogResult
+            //if form closed show OK
             DialogResult result = hello.ShowDialog();
 
             if (result == DialogResult.OK)
