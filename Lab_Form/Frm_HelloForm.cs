@@ -22,5 +22,28 @@ namespace Lab_Form
             string name = txtName.Text;
             MessageBox.Show($"Hello {name} !");
         }
+
+        // using Message to catch user's DialogResult
+        private void btnMessageBox_Click(object sender, EventArgs e)
+        {
+            DialogResult result =
+                MessageBox.Show("今天星期一嗎?", //1.問題
+                "問你喔",                       //2.標題
+                MessageBoxButtons.YesNoCancel, //3.按鈕組合
+                MessageBoxIcon.Question);      //4.圖示icon
+
+            if (result == DialogResult.Yes)
+            {
+                MessageBox.Show("你好棒你好聰明");
+            }
+            else if (result == DialogResult.No)
+            {
+                MessageBox.Show("很遺憾今天是星期一");
+            }
+            else
+            {
+                MessageBox.Show("你就這麼不想跟我說話嗎");
+            }
+        }
     }
 }

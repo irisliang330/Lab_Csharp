@@ -134,10 +134,42 @@ namespace Lab_Form
 
 
 
-        private void btnRegisterEvent01_Click(object sender, EventArgs e) {
+        private void btnRegisterEvent01_Click(object sender, EventArgs e)
+        {
             MessageBox.Show("Registor Event 事件繫結01");
         }
 
-        
+        //Using Delegate
+
+        private void btnDelegate_Click(object sender, EventArgs e)
+        {
+            Payment pay;
+            if (DateTime.Now.Minute %2 == 0)
+            {
+                pay = PriceA;    
+            }
+            else
+            {
+                pay = PriceB;
+            }
+
+            decimal amount = decimal.Parse(txtPrice.Text);
+            decimal result = pay(amount);
+            MessageBox.Show($"{result}");
+        }
+
+        //declare delegate
+        delegate decimal Payment(decimal amount);
+
+        decimal PriceA(decimal originPrice)
+        {
+            decimal priceA = originPrice * Convert.ToDecimal(0.8);
+            return priceA;
+        }
+        decimal PriceB(decimal originPrice)
+        {
+            decimal priceB = originPrice * Convert.ToDecimal(0.6);
+            return priceB;
+        }
     }
 }

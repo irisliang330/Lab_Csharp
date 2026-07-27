@@ -32,6 +32,7 @@
             this.txtName = new System.Windows.Forms.TextBox();
             this.labName = new System.Windows.Forms.Label();
             this.btnHello = new System.Windows.Forms.Button();
+            this.btnMessageBox = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtName
@@ -40,7 +41,7 @@
             this.txtName.Location = new System.Drawing.Point(373, 378);
             this.txtName.Margin = new System.Windows.Forms.Padding(9);
             this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(153, 45);
+            this.txtName.Size = new System.Drawing.Size(153, 29);
             this.txtName.TabIndex = 0;
             // 
             // labName
@@ -52,7 +53,7 @@
             this.labName.Location = new System.Drawing.Point(193, 381);
             this.labName.Margin = new System.Windows.Forms.Padding(9, 0, 9, 0);
             this.labName.Name = "labName";
-            this.labName.Size = new System.Drawing.Size(162, 36);
+            this.labName.Size = new System.Drawing.Size(94, 21);
             this.labName.TabIndex = 1;
             this.labName.Text = "請輸入姓名:";
             // 
@@ -69,14 +70,25 @@
             this.btnHello.UseVisualStyleBackColor = false;
             this.btnHello.Click += new System.EventHandler(this.btnHello_Click);
             // 
+            // btnMessageBox
+            // 
+            this.btnMessageBox.Location = new System.Drawing.Point(588, 425);
+            this.btnMessageBox.Name = "btnMessageBox";
+            this.btnMessageBox.Size = new System.Drawing.Size(154, 51);
+            this.btnMessageBox.TabIndex = 3;
+            this.btnMessageBox.Text = "Message Box";
+            this.btnMessageBox.UseVisualStyleBackColor = true;
+            this.btnMessageBox.Click += new System.EventHandler(this.btnMessageBox_Click);
+            // 
             // Frm_HelloForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(17F, 36F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(1038, 544);
+            this.Controls.Add(this.btnMessageBox);
             this.Controls.Add(this.btnHello);
             this.Controls.Add(this.labName);
             this.Controls.Add(this.txtName);
@@ -94,6 +106,7 @@
         private System.Windows.Forms.TextBox txtName;
         private System.Windows.Forms.Label labName;
         private System.Windows.Forms.Button btnHello;
+        private System.Windows.Forms.Button btnMessageBox;
     }
 }
 
