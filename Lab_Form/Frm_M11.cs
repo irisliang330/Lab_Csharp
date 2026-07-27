@@ -56,15 +56,15 @@ namespace Lab_Form
         private void btnPre_Click(object sender, EventArgs e)
         {
             int preB = ++preCount;
-            labPre.Text = $"Pre:{preB}";
-            labPreCount.Text = $"Pre:{preCount}";
+            labPre.Text = $"PreB:{preB}";
+            labPreCount.Text = $"PreCount:{preCount}";
         }
 
         private void btnPost_Click(object sender, EventArgs e)
         {
             int postB = postCount++;
-            labPost.Text = $"Post:{postB}";
-            labPostCount.Text = $"Pre:{postCount}";
+            labPost.Text = $"PostB:{postB}";
+            labPostCount.Text = $"PostCount:{postCount}";
         }
     }
 }
