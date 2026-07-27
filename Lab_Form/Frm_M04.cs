@@ -20,7 +20,15 @@ namespace Lab_Form
         private void btnOpenHelloForm_Click(object sender, EventArgs e)
         {
             Frm_HelloForm hello = new Frm_HelloForm();
-            hello.Show();
+            //hello.Show();
+
+            //todo 9-12 DialogResult
+            DialogResult result = hello.ShowDialog();
+
+            if (result == DialogResult.OK)
+            {
+                MessageBox.Show("OK");
+            }
 
         }
 

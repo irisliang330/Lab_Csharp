@@ -33,6 +33,7 @@
             this.labName = new System.Windows.Forms.Label();
             this.btnHello = new System.Windows.Forms.Button();
             this.btnMessageBox = new System.Windows.Forms.Button();
+            this.btnUsingDialogResult = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtName
@@ -80,14 +81,21 @@
             this.btnMessageBox.UseVisualStyleBackColor = true;
             this.btnMessageBox.Click += new System.EventHandler(this.btnMessageBox_Click);
             // 
+            // btnUsingDialogResult
+            // 
+            this.btnUsingDialogResult.Location = new System.Drawing.Point(0, 0);
+            this.btnUsingDialogResult.Name = "btnUsingDialogResult";
+            this.btnUsingDialogResult.Size = new System.Drawing.Size(75, 23);
+            this.btnUsingDialogResult.TabIndex = 0;
+            // 
             // Frm_HelloForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.AutoScroll = true;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(1038, 544);
+            this.Controls.Add(this.btnUsingDialogResult);
             this.Controls.Add(this.btnMessageBox);
             this.Controls.Add(this.btnHello);
             this.Controls.Add(this.labName);
@@ -107,6 +115,7 @@
         private System.Windows.Forms.Label labName;
         private System.Windows.Forms.Button btnHello;
         private System.Windows.Forms.Button btnMessageBox;
+        private System.Windows.Forms.Button btnUsingDialogResult;
     }
 }
 
