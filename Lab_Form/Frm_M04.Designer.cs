@@ -37,6 +37,7 @@
             this.NewMember = new System.Windows.Forms.Button();
             this.btnDataBinding = new System.Windows.Forms.Button();
             this.btnRegitster01 = new System.Windows.Forms.Button();
+            this.btnRegisterEvent02 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnOpenHelloForm
@@ -128,11 +129,21 @@
             this.btnRegitster01.Text = "RegisterEvent01";
             this.btnRegitster01.UseVisualStyleBackColor = true;
             // 
+            // btnRegisterEvent02
+            // 
+            this.btnRegisterEvent02.Location = new System.Drawing.Point(394, 194);
+            this.btnRegisterEvent02.Name = "btnRegisterEvent02";
+            this.btnRegisterEvent02.Size = new System.Drawing.Size(118, 23);
+            this.btnRegisterEvent02.TabIndex = 9;
+            this.btnRegisterEvent02.Text = "Register Event02";
+            this.btnRegisterEvent02.UseVisualStyleBackColor = true;
+            // 
             // Frm_M04
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnRegisterEvent02);
             this.Controls.Add(this.btnRegitster01);
             this.Controls.Add(this.btnDataBinding);
             this.Controls.Add(this.NewMember);
@@ -159,5 +170,6 @@
         private System.Windows.Forms.Button NewMember;
         private System.Windows.Forms.Button btnDataBinding;
         private System.Windows.Forms.Button btnRegitster01;
+        private System.Windows.Forms.Button btnRegisterEvent02;
     }
 }
