@@ -44,6 +44,8 @@ namespace Lab_Form
             {
                 MessageBox.Show("你就這麼不想跟我說話嗎");
             }
+
+
         }
     }
 }

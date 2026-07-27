@@ -185,11 +185,14 @@
             // 
             // txtPrice
             // 
+            this.txtPrice.BackColor = System.Drawing.Color.LightBlue;
+            this.txtPrice.Font = new System.Drawing.Font("微軟正黑體", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.txtPrice.Location = new System.Drawing.Point(258, 229);
             this.txtPrice.Name = "txtPrice";
-            this.txtPrice.Size = new System.Drawing.Size(142, 22);
+            this.txtPrice.Size = new System.Drawing.Size(142, 27);
             this.txtPrice.TabIndex = 11;
             this.txtPrice.Text = "Input Price";
+            this.txtPrice.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // Frm_M04
             // 
