@@ -114,17 +114,28 @@ namespace Lab_Form
         {
             //from Designer.cs
             //this.btnHello.Click += new System.EventHandler(this.btnHello_Click);
-            btnRegitster01.Click += new EventHandler(RegisterEvent01_Click);
+            btnRegitster01.Click += new EventHandler(btnRegisterEvent01_Click);
             btnRegisterEvent02.Click += btnRegisterEvent02_Click;
+            btnRegisterEvent02.Click += btnRegisterEvent01_Click;
+
+            //cant bind with click event if dont match delegate
+            //btnRegisterEvent02.Click += MyString; 
         }
+
+        //string MyString()
+        //{
+        //    return "";
+        //}
 
         private void btnRegisterEvent02_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Registor Event 事件繫結02");
         }
 
-        private void RegisterEvent01_Click(object sender, EventArgs e) {
-            MessageBox.Show("Registor Event 事件繫結");
+
+
+        private void btnRegisterEvent01_Click(object sender, EventArgs e) {
+            MessageBox.Show("Registor Event 事件繫結01");
         }
 
         
