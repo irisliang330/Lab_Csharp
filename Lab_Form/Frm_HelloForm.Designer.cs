@@ -33,39 +33,40 @@
             this.labName = new System.Windows.Forms.Label();
             this.btnHello = new System.Windows.Forms.Button();
             this.btnMessageBox = new System.Windows.Forms.Button();
-            this.btnUsingDialogResult = new System.Windows.Forms.Button();
+            this.btnTestStaticVar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtName
             // 
-            this.txtName.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.txtName.Location = new System.Drawing.Point(373, 378);
+            this.txtName.Font = new System.Drawing.Font("微軟正黑體", 9.857143F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.txtName.Location = new System.Drawing.Point(169, 273);
             this.txtName.Margin = new System.Windows.Forms.Padding(9);
             this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(153, 29);
+            this.txtName.Size = new System.Drawing.Size(153, 38);
             this.txtName.TabIndex = 0;
             // 
             // labName
             // 
             this.labName.AutoSize = true;
             this.labName.BackColor = System.Drawing.Color.Transparent;
-            this.labName.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.labName.Font = new System.Drawing.Font("微軟正黑體", 9.857143F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.labName.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.labName.Location = new System.Drawing.Point(193, 381);
+            this.labName.Location = new System.Drawing.Point(22, 276);
             this.labName.Margin = new System.Windows.Forms.Padding(9, 0, 9, 0);
             this.labName.Name = "labName";
-            this.labName.Size = new System.Drawing.Size(94, 21);
+            this.labName.Size = new System.Drawing.Size(140, 31);
             this.labName.TabIndex = 1;
             this.labName.Text = "請輸入姓名:";
             // 
             // btnHello
             // 
             this.btnHello.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnHello.Font = new System.Drawing.Font("微軟正黑體", 9.857143F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.btnHello.ForeColor = System.Drawing.SystemColors.MenuBar;
-            this.btnHello.Location = new System.Drawing.Point(262, 441);
+            this.btnHello.Location = new System.Drawing.Point(28, 329);
             this.btnHello.Margin = new System.Windows.Forms.Padding(9);
             this.btnHello.Name = "btnHello";
-            this.btnHello.Size = new System.Drawing.Size(213, 69);
+            this.btnHello.Size = new System.Drawing.Size(134, 69);
             this.btnHello.TabIndex = 2;
             this.btnHello.Text = "Hello";
             this.btnHello.UseVisualStyleBackColor = false;
@@ -73,29 +74,37 @@
             // 
             // btnMessageBox
             // 
-            this.btnMessageBox.Location = new System.Drawing.Point(588, 425);
+            this.btnMessageBox.Font = new System.Drawing.Font("微軟正黑體", 9.857143F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.btnMessageBox.Location = new System.Drawing.Point(437, 312);
             this.btnMessageBox.Name = "btnMessageBox";
-            this.btnMessageBox.Size = new System.Drawing.Size(154, 51);
+            this.btnMessageBox.Size = new System.Drawing.Size(154, 86);
             this.btnMessageBox.TabIndex = 3;
             this.btnMessageBox.Text = "Message Box";
             this.btnMessageBox.UseVisualStyleBackColor = true;
             this.btnMessageBox.Click += new System.EventHandler(this.btnMessageBox_Click);
             // 
-            // btnUsingDialogResult
+            // btnTestStaticVar
             // 
-            this.btnUsingDialogResult.Location = new System.Drawing.Point(0, 0);
-            this.btnUsingDialogResult.Name = "btnUsingDialogResult";
-            this.btnUsingDialogResult.Size = new System.Drawing.Size(75, 23);
-            this.btnUsingDialogResult.TabIndex = 0;
+            this.btnTestStaticVar.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnTestStaticVar.Font = new System.Drawing.Font("微軟正黑體", 9.857143F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.btnTestStaticVar.ForeColor = System.Drawing.SystemColors.MenuBar;
+            this.btnTestStaticVar.Location = new System.Drawing.Point(180, 329);
+            this.btnTestStaticVar.Margin = new System.Windows.Forms.Padding(9);
+            this.btnTestStaticVar.Name = "btnTestStaticVar";
+            this.btnTestStaticVar.Size = new System.Drawing.Size(245, 69);
+            this.btnTestStaticVar.TabIndex = 4;
+            this.btnTestStaticVar.Text = "btnTestStaticVar";
+            this.btnTestStaticVar.UseVisualStyleBackColor = false;
+            this.btnTestStaticVar.Click += new System.EventHandler(this.btnTestStaticVar_Click);
             // 
             // Frm_HelloForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(17F, 36F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.ClientSize = new System.Drawing.Size(1038, 544);
-            this.Controls.Add(this.btnUsingDialogResult);
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(787, 416);
+            this.Controls.Add(this.btnTestStaticVar);
             this.Controls.Add(this.btnMessageBox);
             this.Controls.Add(this.btnHello);
             this.Controls.Add(this.labName);
@@ -115,7 +124,7 @@
         private System.Windows.Forms.Label labName;
         private System.Windows.Forms.Button btnHello;
         private System.Windows.Forms.Button btnMessageBox;
-        private System.Windows.Forms.Button btnUsingDialogResult;
+        private System.Windows.Forms.Button btnTestStaticVar;
     }
 }
 

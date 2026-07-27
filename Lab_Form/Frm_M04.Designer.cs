@@ -31,20 +31,21 @@
             this.btnOpenHelloForm = new System.Windows.Forms.Button();
             this.btnUsingVoidMethod = new System.Windows.Forms.Button();
             this.btnUsingDiffClassMethod = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.btnNotVoidMethod = new System.Windows.Forms.Button();
+            this.btnEncapsulation = new System.Windows.Forms.Button();
+            this.btnPartialClass = new System.Windows.Forms.Button();
             this.NewMember = new System.Windows.Forms.Button();
-            this.btnDataBinding = new System.Windows.Forms.Button();
+            this.btnEventBinding = new System.Windows.Forms.Button();
             this.btnRegisterEvent01 = new System.Windows.Forms.Button();
             this.btnRegisterEvent02 = new System.Windows.Forms.Button();
             this.btnDelegate = new System.Windows.Forms.Button();
             this.txtDelegateInputPrice = new System.Windows.Forms.TextBox();
+            this.OpenFrmM11 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnOpenHelloForm
             // 
-            this.btnOpenHelloForm.BackColor = System.Drawing.Color.LightBlue;
+            this.btnOpenHelloForm.BackColor = System.Drawing.Color.Wheat;
             this.btnOpenHelloForm.Font = new System.Drawing.Font("微軟正黑體", 11.14286F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.btnOpenHelloForm.Location = new System.Drawing.Point(36, 61);
             this.btnOpenHelloForm.Margin = new System.Windows.Forms.Padding(10);
@@ -87,50 +88,50 @@
             this.btnUsingDiffClassMethod.UseVisualStyleBackColor = false;
             this.btnUsingDiffClassMethod.Click += new System.EventHandler(this.btnUsingDiffClassMethod_Click);
             // 
-            // button2
+            // btnNotVoidMethod
             // 
-            this.button2.BackColor = System.Drawing.Color.LightBlue;
-            this.button2.Font = new System.Drawing.Font("微軟正黑體", 11.14286F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.button2.Location = new System.Drawing.Point(36, 419);
-            this.button2.Margin = new System.Windows.Forms.Padding(10);
-            this.button2.MinimumSize = new System.Drawing.Size(200, 0);
-            this.button2.Name = "button2";
-            this.button2.Padding = new System.Windows.Forms.Padding(10);
-            this.button2.Size = new System.Drawing.Size(425, 80);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "有回傳值的方法";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.btnNotVoidMethod.BackColor = System.Drawing.Color.LightBlue;
+            this.btnNotVoidMethod.Font = new System.Drawing.Font("微軟正黑體", 11.14286F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.btnNotVoidMethod.Location = new System.Drawing.Point(36, 419);
+            this.btnNotVoidMethod.Margin = new System.Windows.Forms.Padding(10);
+            this.btnNotVoidMethod.MinimumSize = new System.Drawing.Size(200, 0);
+            this.btnNotVoidMethod.Name = "btnNotVoidMethod";
+            this.btnNotVoidMethod.Padding = new System.Windows.Forms.Padding(10);
+            this.btnNotVoidMethod.Size = new System.Drawing.Size(425, 80);
+            this.btnNotVoidMethod.TabIndex = 3;
+            this.btnNotVoidMethod.Text = "有回傳值的方法";
+            this.btnNotVoidMethod.UseVisualStyleBackColor = false;
+            this.btnNotVoidMethod.Click += new System.EventHandler(this.btnNotVoidMethod_Click);
             // 
-            // button3
+            // btnEncapsulation
             // 
-            this.button3.BackColor = System.Drawing.Color.LightBlue;
-            this.button3.Font = new System.Drawing.Font("微軟正黑體", 11.14286F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.button3.Location = new System.Drawing.Point(36, 547);
-            this.button3.Margin = new System.Windows.Forms.Padding(10);
-            this.button3.MinimumSize = new System.Drawing.Size(200, 0);
-            this.button3.Name = "button3";
-            this.button3.Padding = new System.Windows.Forms.Padding(10);
-            this.button3.Size = new System.Drawing.Size(425, 80);
-            this.button3.TabIndex = 4;
-            this.button3.Text = "封裝練習";
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.btnEncapsulation.BackColor = System.Drawing.Color.LightBlue;
+            this.btnEncapsulation.Font = new System.Drawing.Font("微軟正黑體", 11.14286F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.btnEncapsulation.Location = new System.Drawing.Point(36, 547);
+            this.btnEncapsulation.Margin = new System.Windows.Forms.Padding(10);
+            this.btnEncapsulation.MinimumSize = new System.Drawing.Size(200, 0);
+            this.btnEncapsulation.Name = "btnEncapsulation";
+            this.btnEncapsulation.Padding = new System.Windows.Forms.Padding(10);
+            this.btnEncapsulation.Size = new System.Drawing.Size(425, 80);
+            this.btnEncapsulation.TabIndex = 4;
+            this.btnEncapsulation.Text = "封裝練習";
+            this.btnEncapsulation.UseVisualStyleBackColor = false;
+            this.btnEncapsulation.Click += new System.EventHandler(this.btnEncapsulation_Click);
             // 
-            // button4
+            // btnPartialClass
             // 
-            this.button4.BackColor = System.Drawing.Color.LightBlue;
-            this.button4.Font = new System.Drawing.Font("微軟正黑體", 11.14286F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.button4.Location = new System.Drawing.Point(36, 675);
-            this.button4.Margin = new System.Windows.Forms.Padding(10);
-            this.button4.MinimumSize = new System.Drawing.Size(200, 0);
-            this.button4.Name = "button4";
-            this.button4.Padding = new System.Windows.Forms.Padding(10);
-            this.button4.Size = new System.Drawing.Size(425, 80);
-            this.button4.TabIndex = 5;
-            this.button4.Text = "Partial Class";
-            this.button4.UseVisualStyleBackColor = false;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.btnPartialClass.BackColor = System.Drawing.Color.LightBlue;
+            this.btnPartialClass.Font = new System.Drawing.Font("微軟正黑體", 11.14286F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.btnPartialClass.Location = new System.Drawing.Point(36, 675);
+            this.btnPartialClass.Margin = new System.Windows.Forms.Padding(10);
+            this.btnPartialClass.MinimumSize = new System.Drawing.Size(200, 0);
+            this.btnPartialClass.Name = "btnPartialClass";
+            this.btnPartialClass.Padding = new System.Windows.Forms.Padding(10);
+            this.btnPartialClass.Size = new System.Drawing.Size(425, 80);
+            this.btnPartialClass.TabIndex = 5;
+            this.btnPartialClass.Text = "Partial Class";
+            this.btnPartialClass.UseVisualStyleBackColor = false;
+            this.btnPartialClass.Click += new System.EventHandler(this.btnPartialClass_Click);
             // 
             // NewMember
             // 
@@ -147,20 +148,20 @@
             this.NewMember.UseVisualStyleBackColor = false;
             this.NewMember.Click += new System.EventHandler(this.NewMember_Click);
             // 
-            // btnDataBinding
+            // btnEventBinding
             // 
-            this.btnDataBinding.BackColor = System.Drawing.Color.LightBlue;
-            this.btnDataBinding.Font = new System.Drawing.Font("微軟正黑體", 11.14286F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.btnDataBinding.Location = new System.Drawing.Point(573, 58);
-            this.btnDataBinding.Margin = new System.Windows.Forms.Padding(10);
-            this.btnDataBinding.MinimumSize = new System.Drawing.Size(200, 0);
-            this.btnDataBinding.Name = "btnDataBinding";
-            this.btnDataBinding.Padding = new System.Windows.Forms.Padding(10);
-            this.btnDataBinding.Size = new System.Drawing.Size(418, 80);
-            this.btnDataBinding.TabIndex = 7;
-            this.btnDataBinding.Text = "資料繫結";
-            this.btnDataBinding.UseVisualStyleBackColor = false;
-            this.btnDataBinding.Click += new System.EventHandler(this.btnDataBinding_Click);
+            this.btnEventBinding.BackColor = System.Drawing.Color.LightBlue;
+            this.btnEventBinding.Font = new System.Drawing.Font("微軟正黑體", 11.14286F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.btnEventBinding.Location = new System.Drawing.Point(573, 58);
+            this.btnEventBinding.Margin = new System.Windows.Forms.Padding(10);
+            this.btnEventBinding.MinimumSize = new System.Drawing.Size(200, 0);
+            this.btnEventBinding.Name = "btnEventBinding";
+            this.btnEventBinding.Padding = new System.Windows.Forms.Padding(10);
+            this.btnEventBinding.Size = new System.Drawing.Size(418, 80);
+            this.btnEventBinding.TabIndex = 7;
+            this.btnEventBinding.Text = "Event Bind";
+            this.btnEventBinding.UseVisualStyleBackColor = false;
+            this.btnEventBinding.Click += new System.EventHandler(this.btnEventBinding_Click);
             // 
             // btnRegisterEvent01
             // 
@@ -219,21 +220,37 @@
             this.txtDelegateInputPrice.Text = "1000";
             this.txtDelegateInputPrice.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
+            // OpenFrmM11
+            // 
+            this.OpenFrmM11.BackColor = System.Drawing.Color.Wheat;
+            this.OpenFrmM11.Font = new System.Drawing.Font("微軟正黑體", 11.14286F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.OpenFrmM11.Location = new System.Drawing.Point(573, 675);
+            this.OpenFrmM11.Margin = new System.Windows.Forms.Padding(10);
+            this.OpenFrmM11.MinimumSize = new System.Drawing.Size(200, 0);
+            this.OpenFrmM11.Name = "OpenFrmM11";
+            this.OpenFrmM11.Padding = new System.Windows.Forms.Padding(10);
+            this.OpenFrmM11.Size = new System.Drawing.Size(425, 80);
+            this.OpenFrmM11.TabIndex = 12;
+            this.OpenFrmM11.Text = "Open Frm_M11";
+            this.OpenFrmM11.UseVisualStyleBackColor = false;
+            this.OpenFrmM11.Click += new System.EventHandler(this.OpenFrmM11_Click);
+            // 
             // Frm_M04
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(1593, 1026);
+            this.ClientSize = new System.Drawing.Size(1061, 950);
+            this.Controls.Add(this.OpenFrmM11);
             this.Controls.Add(this.txtDelegateInputPrice);
             this.Controls.Add(this.btnDelegate);
             this.Controls.Add(this.btnRegisterEvent02);
             this.Controls.Add(this.btnRegisterEvent01);
-            this.Controls.Add(this.btnDataBinding);
+            this.Controls.Add(this.btnEventBinding);
             this.Controls.Add(this.NewMember);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btnPartialClass);
+            this.Controls.Add(this.btnEncapsulation);
+            this.Controls.Add(this.btnNotVoidMethod);
             this.Controls.Add(this.btnUsingDiffClassMethod);
             this.Controls.Add(this.btnUsingVoidMethod);
             this.Controls.Add(this.btnOpenHelloForm);
@@ -250,14 +267,15 @@
         private System.Windows.Forms.Button btnOpenHelloForm;
         private System.Windows.Forms.Button btnUsingVoidMethod;
         private System.Windows.Forms.Button btnUsingDiffClassMethod;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btnNotVoidMethod;
+        private System.Windows.Forms.Button btnEncapsulation;
+        private System.Windows.Forms.Button btnPartialClass;
         private System.Windows.Forms.Button NewMember;
-        private System.Windows.Forms.Button btnDataBinding;
+        private System.Windows.Forms.Button btnEventBinding;
         private System.Windows.Forms.Button btnRegisterEvent01;
         private System.Windows.Forms.Button btnRegisterEvent02;
         private System.Windows.Forms.Button btnDelegate;
         private System.Windows.Forms.TextBox txtDelegateInputPrice;
+        private System.Windows.Forms.Button OpenFrmM11;
     }
 }

@@ -22,11 +22,10 @@ namespace Lab_Form
             string name = txtName.Text;
             MessageBox.Show($"Hello {name} !");
             this.Text = name;
+
             //using DialogResult
             this.DialogResult = DialogResult.OK;
         }
-
-
 
         // using Message to catch user's DialogResult
         private void btnMessageBox_Click(object sender, EventArgs e)
@@ -50,8 +49,12 @@ namespace Lab_Form
                 MessageBox.Show("你就這麼不想跟我說話嗎");
             }
 
-
         }
 
+        //test static var
+        private void btnTestStaticVar_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show($"{StaticLab.staticCount}");
+        }
     }
 }

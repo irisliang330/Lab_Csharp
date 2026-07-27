@@ -33,6 +33,13 @@ namespace Lab_Form
 
         }
 
+        //open Frm_M11
+        private void OpenFrmM11_Click(object sender, EventArgs e)
+        {
+            Frm_M11 frm_M11 = new Frm_M11();
+            frm_M11.Show();
+        }
+
         //無回傳值的Method
 
         private void btnUsingVoidMethod_Click(object sender, EventArgs e)
@@ -55,7 +62,7 @@ namespace Lab_Form
 
 
         //有回傳值的Method
-        private void button2_Click(object sender, EventArgs e)
+        private void btnNotVoidMethod_Click(object sender, EventArgs e)
         {
             string birthYearResult = GetBirthYear(46);
             MessageBox.Show(birthYearResult);
@@ -69,7 +76,7 @@ namespace Lab_Form
         }
 
         //Encapsulation Practice
-        private void button3_Click(object sender, EventArgs e)
+        private void btnEncapsulation_Click(object sender, EventArgs e)
         {
             MyClass mc02 = new MyClass();
             mc02.Method03Internal();
@@ -77,7 +84,7 @@ namespace Lab_Form
             mc02.Method05CallMethod01And02();
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void btnPartialClass_Click(object sender, EventArgs e)
         {
             MyClass mcPartial = new MyClass();
             mcPartial.Method06PartialClass();
@@ -122,7 +129,7 @@ namespace Lab_Form
         }
 
         // Binding Event and Method
-        private void btnDataBinding_Click(object sender, EventArgs e)
+        private void btnEventBinding_Click(object sender, EventArgs e)
         {
             //from Designer.cs
             //this.btnHello.Click += new System.EventHandler(this.btnHello_Click);
@@ -130,7 +137,7 @@ namespace Lab_Form
             btnRegisterEvent02.Click += btnRegisterEvent02_Click;
             btnRegisterEvent02.Click += btnRegisterEvent01_Click;
 
-            //cant bind with click event if dont match delegate
+            //cant bind with click event if don't match delegate
             //btnRegisterEvent02.Click += MyString; 
         }
 
@@ -147,13 +154,9 @@ namespace Lab_Form
         private void btnRegisterEvent01_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Register Event 繫結01");
-
-            //test static var
-            MessageBox.Show($"{StaticLab.staticCount}");
         }
 
         //Using Delegate
-
         private void btnDelegate_Click(object sender, EventArgs e)
         {
             Payment pay;
