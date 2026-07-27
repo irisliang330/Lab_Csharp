@@ -34,6 +34,12 @@
             this.btnMulti = new System.Windows.Forms.Button();
             this.btnDivide = new System.Windows.Forms.Button();
             this.btnRemainder = new System.Windows.Forms.Button();
+            this.btnPre = new System.Windows.Forms.Button();
+            this.labPre = new System.Windows.Forms.Label();
+            this.labPost = new System.Windows.Forms.Label();
+            this.btnPost = new System.Windows.Forms.Button();
+            this.labPostCount = new System.Windows.Forms.Label();
+            this.labPreCount = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnCount
@@ -101,11 +107,79 @@
             this.btnRemainder.UseVisualStyleBackColor = true;
             this.btnRemainder.Click += new System.EventHandler(this.btnRemainder_Click);
             // 
+            // btnPre
+            // 
+            this.btnPre.Font = new System.Drawing.Font("微軟正黑體", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.btnPre.Location = new System.Drawing.Point(259, 164);
+            this.btnPre.Name = "btnPre";
+            this.btnPre.Size = new System.Drawing.Size(90, 23);
+            this.btnPre.TabIndex = 6;
+            this.btnPre.Text = "++count";
+            this.btnPre.UseVisualStyleBackColor = true;
+            this.btnPre.Click += new System.EventHandler(this.btnPre_Click);
+            // 
+            // labPre
+            // 
+            this.labPre.AutoSize = true;
+            this.labPre.Font = new System.Drawing.Font("微軟正黑體", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.labPre.Location = new System.Drawing.Point(355, 168);
+            this.labPre.Name = "labPre";
+            this.labPre.Size = new System.Drawing.Size(60, 19);
+            this.labPre.TabIndex = 7;
+            this.labPre.Text = "PreB: 0";
+            // 
+            // labPost
+            // 
+            this.labPost.AutoSize = true;
+            this.labPost.Font = new System.Drawing.Font("微軟正黑體", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.labPost.Location = new System.Drawing.Point(355, 197);
+            this.labPost.Name = "labPost";
+            this.labPost.Size = new System.Drawing.Size(68, 19);
+            this.labPost.TabIndex = 9;
+            this.labPost.Text = "PostB: 0";
+            // 
+            // btnPost
+            // 
+            this.btnPost.Font = new System.Drawing.Font("微軟正黑體", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.btnPost.Location = new System.Drawing.Point(259, 193);
+            this.btnPost.Name = "btnPost";
+            this.btnPost.Size = new System.Drawing.Size(90, 23);
+            this.btnPost.TabIndex = 8;
+            this.btnPost.Text = "count++";
+            this.btnPost.UseVisualStyleBackColor = true;
+            this.btnPost.Click += new System.EventHandler(this.btnPost_Click);
+            // 
+            // labPostCount
+            // 
+            this.labPostCount.AutoSize = true;
+            this.labPostCount.Font = new System.Drawing.Font("微軟正黑體", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.labPostCount.Location = new System.Drawing.Point(429, 197);
+            this.labPostCount.Name = "labPostCount";
+            this.labPostCount.Size = new System.Drawing.Size(106, 19);
+            this.labPostCount.TabIndex = 11;
+            this.labPostCount.Text = "PostCount : 0";
+            // 
+            // labPreCount
+            // 
+            this.labPreCount.AutoSize = true;
+            this.labPreCount.Font = new System.Drawing.Font("微軟正黑體", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.labPreCount.Location = new System.Drawing.Point(429, 168);
+            this.labPreCount.Name = "labPreCount";
+            this.labPreCount.Size = new System.Drawing.Size(98, 19);
+            this.labPreCount.TabIndex = 10;
+            this.labPreCount.Text = "PreCount : 0";
+            // 
             // Frm_M11
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.labPostCount);
+            this.Controls.Add(this.labPreCount);
+            this.Controls.Add(this.labPost);
+            this.Controls.Add(this.btnPost);
+            this.Controls.Add(this.labPre);
+            this.Controls.Add(this.btnPre);
             this.Controls.Add(this.btnRemainder);
             this.Controls.Add(this.btnDivide);
             this.Controls.Add(this.btnMulti);
@@ -127,5 +201,11 @@
         private System.Windows.Forms.Button btnMulti;
         private System.Windows.Forms.Button btnDivide;
         private System.Windows.Forms.Button btnRemainder;
+        private System.Windows.Forms.Button btnPre;
+        private System.Windows.Forms.Label labPre;
+        private System.Windows.Forms.Label labPost;
+        private System.Windows.Forms.Button btnPost;
+        private System.Windows.Forms.Label labPostCount;
+        private System.Windows.Forms.Label labPreCount;
     }
 }

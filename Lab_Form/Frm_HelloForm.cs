@@ -21,6 +21,8 @@ namespace Lab_Form
         {
             string name = txtName.Text;
             MessageBox.Show($"Hello {name} !");
+
+            //9-12 DialogResult
         }
 
         // using Message to catch user's DialogResult

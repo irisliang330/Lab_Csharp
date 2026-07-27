@@ -48,5 +48,23 @@ namespace Lab_Form
             count %= 3;
             labCount.Text = $"Count:{count}";
         }
+
+        //count++ vs ++count
+
+        int preCount = 0;
+        int postCount = 0;
+        private void btnPre_Click(object sender, EventArgs e)
+        {
+            int preB = ++preCount;
+            labPre.Text = $"Pre:{preB}";
+            labPreCount.Text = $"Pre:{preCount}";
+        }
+
+        private void btnPost_Click(object sender, EventArgs e)
+        {
+            int postB = postCount++;
+            labPost.Text = $"Post:{postB}";
+            labPostCount.Text = $"Pre:{postCount}";
+        }
     }
 }
