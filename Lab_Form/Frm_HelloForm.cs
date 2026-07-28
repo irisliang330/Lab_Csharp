@@ -12,9 +12,11 @@ namespace Lab_Form
 {
     public partial class Frm_HelloForm : Form
     {
-        public Frm_HelloForm()
+        public Frm_HelloForm() //15-12 constructor
         {
+            //Method to new every form controls
             InitializeComponent();
+
         }
 
         private void btnHello_Click(object sender, EventArgs e)
