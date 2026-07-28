@@ -31,6 +31,9 @@
             this.btnValueType = new System.Windows.Forms.Button();
             this.btnReferenceType = new System.Windows.Forms.Button();
             this.txtReferenceType = new System.Windows.Forms.TextBox();
+            this.btnPassByType = new System.Windows.Forms.Button();
+            this.btnPassByReference = new System.Windows.Forms.Button();
+            this.btnPassByRef = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnValueType
@@ -64,13 +67,50 @@
             this.txtReferenceType.TabIndex = 2;
             this.txtReferenceType.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
+            // btnPassByType
+            // 
+            this.btnPassByType.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.btnPassByType.Location = new System.Drawing.Point(28, 174);
+            this.btnPassByType.Name = "btnPassByType";
+            this.btnPassByType.Size = new System.Drawing.Size(163, 44);
+            this.btnPassByType.TabIndex = 0;
+            this.btnPassByType.Text = "Pass By Value";
+            this.btnPassByType.UseVisualStyleBackColor = true;
+            this.btnPassByType.Click += new System.EventHandler(this.btnPassByValueType_Click);
+            // 
+            // btnPassByReference
+            // 
+            this.btnPassByReference.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.btnPassByReference.Location = new System.Drawing.Point(28, 224);
+            this.btnPassByReference.Name = "btnPassByReference";
+            this.btnPassByReference.Size = new System.Drawing.Size(163, 44);
+            this.btnPassByReference.TabIndex = 1;
+            this.btnPassByReference.TabStop = false;
+            this.btnPassByReference.Text = "Pass By Reference";
+            this.btnPassByReference.UseVisualStyleBackColor = true;
+            this.btnPassByReference.Click += new System.EventHandler(this.btnPassByReference_Click);
+            // 
+            // btnPassByRef
+            // 
+            this.btnPassByRef.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.btnPassByRef.Location = new System.Drawing.Point(346, 174);
+            this.btnPassByRef.Name = "btnPassByRef";
+            this.btnPassByRef.Size = new System.Drawing.Size(120, 44);
+            this.btnPassByRef.TabIndex = 0;
+            this.btnPassByRef.Text = "Pass By ref";
+            this.btnPassByRef.UseVisualStyleBackColor = true;
+            this.btnPassByRef.Click += new System.EventHandler(this.btnPassByRef_Click);
+            // 
             // Frm_M13
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.txtReferenceType);
+            this.Controls.Add(this.btnPassByReference);
+            this.Controls.Add(this.btnPassByType);
             this.Controls.Add(this.btnReferenceType);
+            this.Controls.Add(this.btnPassByRef);
             this.Controls.Add(this.btnValueType);
             this.Name = "Frm_M13";
             this.Text = "Frm_M13";
@@ -84,5 +124,8 @@
         private System.Windows.Forms.Button btnValueType;
         private System.Windows.Forms.Button btnReferenceType;
         private System.Windows.Forms.TextBox txtReferenceType;
+        private System.Windows.Forms.Button btnPassByType;
+        private System.Windows.Forms.Button btnPassByReference;
+        private System.Windows.Forms.Button btnPassByRef;
     }
 }
