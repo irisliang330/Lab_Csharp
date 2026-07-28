@@ -96,14 +96,16 @@ namespace Lab_Form
         // 14-5 Pass By out
         private void btnPassByOut_Click(object sender, EventArgs e)
         {
-            int A;
-            PassByOut(out A);
-            MessageBox.Show($"A = {A}"); //A=600
+            int A = 300;
+            int B = 200;
+            PassByOut(out A,out B);
+            MessageBox.Show($"A = {A} B= {B}"); //A=600
         }
 
-        void PassByOut(out int x)
+        void PassByOut(out int x, out int y)
         {
             x = 600;
+            y = 500;
             MessageBox.Show($"x = {x}"); //x=600
         }
     }

@@ -94,7 +94,7 @@
             // btnPassByRef
             // 
             this.btnPassByRef.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.btnPassByRef.Location = new System.Drawing.Point(346, 174);
+            this.btnPassByRef.Location = new System.Drawing.Point(218, 174);
             this.btnPassByRef.Name = "btnPassByRef";
             this.btnPassByRef.Size = new System.Drawing.Size(120, 44);
             this.btnPassByRef.TabIndex = 0;
@@ -105,7 +105,7 @@
             // btnPassByOut
             // 
             this.btnPassByOut.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.btnPassByOut.Location = new System.Drawing.Point(346, 224);
+            this.btnPassByOut.Location = new System.Drawing.Point(218, 224);
             this.btnPassByOut.Name = "btnPassByOut";
             this.btnPassByOut.Size = new System.Drawing.Size(120, 44);
             this.btnPassByOut.TabIndex = 3;
