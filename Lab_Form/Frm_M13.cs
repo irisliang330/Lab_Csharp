@@ -156,7 +156,8 @@ namespace Lab_Form
         //Authorize by Magic Num
         private void btnAuthorizeByMagicNum_Click(object sender, EventArgs e)
         {
-            int userRole = 2; //1 for admin
+            int userRole = 2;
+
             int admin = 1;
             int userRD = 2;
 

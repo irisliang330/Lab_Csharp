@@ -22,4 +22,11 @@ namespace Lab_Form
 
     // Enum
     public enum Role { Admin, UserRD, UserMKT }
+
+    //15-10 struct
+    public struct Product
+    {
+        public string ProductName;
+        public decimal ProductPrice;
+    }
 }
