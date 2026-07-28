@@ -36,7 +36,7 @@
             // btnValueType
             // 
             this.btnValueType.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.btnValueType.Location = new System.Drawing.Point(52, 124);
+            this.btnValueType.Location = new System.Drawing.Point(28, 32);
             this.btnValueType.Name = "btnValueType";
             this.btnValueType.Size = new System.Drawing.Size(120, 44);
             this.btnValueType.TabIndex = 0;
@@ -47,7 +47,7 @@
             // btnReferenceType
             // 
             this.btnReferenceType.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.btnReferenceType.Location = new System.Drawing.Point(52, 174);
+            this.btnReferenceType.Location = new System.Drawing.Point(28, 82);
             this.btnReferenceType.Name = "btnReferenceType";
             this.btnReferenceType.Size = new System.Drawing.Size(120, 44);
             this.btnReferenceType.TabIndex = 1;
@@ -58,10 +58,11 @@
             // txtReferenceType
             // 
             this.txtReferenceType.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.txtReferenceType.Location = new System.Drawing.Point(178, 185);
+            this.txtReferenceType.Location = new System.Drawing.Point(154, 93);
             this.txtReferenceType.Name = "txtReferenceType";
             this.txtReferenceType.Size = new System.Drawing.Size(165, 25);
             this.txtReferenceType.TabIndex = 2;
+            this.txtReferenceType.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // Frm_M13
             // 

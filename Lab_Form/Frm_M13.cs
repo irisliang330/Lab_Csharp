@@ -33,7 +33,7 @@ namespace Lab_Form
             TextBox tb = txtReferenceType;
             tb.ForeColor = Color.Brown;
             tb.BackColor = Color.LightYellow;
-            tb.Text = "color change";
+            tb.Text = "color changed";
         }
 
     }
