@@ -19,7 +19,8 @@ namespace Lab_Form
 
             //entry point
             //Application.Run(new Frm_M11());
-            Application.Run(new Frm_M04());
+            //Application.Run(new Frm_M04());
+            Application.Run(new Frm_M13());
             //Application.Run(new Frm_HelloForm());
 
 
