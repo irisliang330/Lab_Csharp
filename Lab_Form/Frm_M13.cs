@@ -17,7 +17,7 @@ namespace Lab_Form
             InitializeComponent();
         }
 
-        //Value Type
+        //13-3 Value Type
         private void btnValueType_Click(object sender, EventArgs e)
         {
             int A = 100; int B = 200; int C = B;
@@ -26,7 +26,8 @@ namespace Lab_Form
             MessageBox.Show($"A:{A} B:{B} C:{C}");
         }
 
-        //Reference Type
+        //13-5 Reference Type
+        //observe in designer.cs
         //this.txtReferenceType = new System.Windows.Forms.TextBox();
         private void btnReferenceType_Click(object sender, EventArgs e)
         {
@@ -52,7 +53,7 @@ namespace Lab_Form
             //output01
             MessageBox.Show($"Name:{memberTestRef.Name} Phone: {memberTestRef.PhoneNumber} BirthDate:{memberTestRef.BirthDate.ToShortDateString()}");
 
-            PassByReference(memberTestRef);
+            PassByReference(memberTestRef); //2016 to 2006
 
             //output02 -10 years = 2006
             MessageBox.Show($"Name:{memberTestRef.Name} Phone: {memberTestRef.PhoneNumber} BirthDate:{memberTestRef.BirthDate.ToShortDateString()}");
@@ -91,5 +92,6 @@ namespace Lab_Form
         {
             x = 10;
         }
+
     }
 }
