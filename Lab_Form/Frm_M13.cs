@@ -93,5 +93,18 @@ namespace Lab_Form
             x = 10;
         }
 
+        // 14-5 Pass By out
+        private void btnPassByOut_Click(object sender, EventArgs e)
+        {
+            int A;
+            PassByOut(out A);
+            MessageBox.Show($"A = {A}"); //A=600
+        }
+
+        void PassByOut(out int x)
+        {
+            x = 600;
+            MessageBox.Show($"x = {x}"); //x=600
+        }
     }
 }
