@@ -108,5 +108,27 @@ namespace Lab_Form
             y = 500;
             MessageBox.Show($"x = {x}"); //x=600
         }
+
+        // 14-9 Using Params
+        private void btnUsingParams_Click(object sender, EventArgs e)
+        {
+            string chineseTotalScore = CalculateTotalScore("國文", 100, 80, 70);
+            MessageBox.Show(chineseTotalScore);
+
+            string mathTotalScore = CalculateTotalScore("數學", 50, 90, 50, 80);
+            MessageBox.Show(mathTotalScore);
+        }
+
+        string CalculateTotalScore(string course,params int[] scores)
+        {
+            int totalScore = 0;
+
+            for (int i = 0; i < scores.Length; i++)
+            {
+                totalScore += scores[i];
+            }
+
+            return $"{course}的總成績: {totalScore} 分";
+        }
     }
 }
