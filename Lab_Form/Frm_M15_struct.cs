@@ -19,7 +19,7 @@ namespace Lab_Form
 
         // 15-10 struct
 
-        string productResult = "資料";
+        string productResult = "資料\n";
 
         // input
         private void btnUserCommit_Click(object sender, EventArgs e)
@@ -28,7 +28,7 @@ namespace Lab_Form
             product.ProductName = txtProductName.Text;
             product.ProductPrice = decimal.Parse(txtProductPrice.Text);
 
-            productResult += $"\n名稱:{product.ProductName}\n價格:{product.ProductPrice}";
+            productResult += $"\n名稱:{product.ProductName}\n價格:{product.ProductPrice}\n";
         }
 
         //output

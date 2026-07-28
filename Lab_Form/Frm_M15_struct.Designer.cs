@@ -102,10 +102,10 @@
             this.labShowProduct.ForeColor = System.Drawing.Color.Azure;
             this.labShowProduct.Location = new System.Drawing.Point(341, 51);
             this.labShowProduct.Name = "labShowProduct";
-            this.labShowProduct.Size = new System.Drawing.Size(195, 55);
+            this.labShowProduct.Size = new System.Drawing.Size(195, 314);
             this.labShowProduct.TabIndex = 1;
             this.labShowProduct.Text = "產品";
-            this.labShowProduct.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labShowProduct.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // Frm_M15_struct
             // 
