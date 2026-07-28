@@ -10,13 +10,14 @@ using System.Windows.Forms;
 
 namespace Lab_Form
 {
-    public partial class Frm_M11 : Form
+    public partial class Frm_M11_var : Form
     {
-        public Frm_M11()
+        public Frm_M11_var()
         {
             InitializeComponent();
         }
 
+        //11-2 compound assignment operator
         int count = 0;
         private void btnCount_Click(object sender, EventArgs e)
         {
@@ -49,7 +50,7 @@ namespace Lab_Form
             labCount.Text = $"Count:{count}";
         }
 
-        //count++ vs ++count
+        //11-4 count++ vs ++count
 
         int preCount = 0;
         int postCount = 0;
@@ -69,7 +70,7 @@ namespace Lab_Form
             labPostCount.Text = $"PostCount:{postCount}";
         }
 
-        //instance var vs static var
+        //12-7 instance var vs static var
         StaticLab sl = new StaticLab();
         private void btnInstance_Click(object sender, EventArgs e)
         {

@@ -28,7 +28,7 @@ namespace Lab_Form
 
         }
 
-        // using Message to catch user's DialogResult
+        //9-8 using Message to catch user's DialogResult
         private void btnMessageBox_Click(object sender, EventArgs e)
         {
             DialogResult result =
@@ -52,7 +52,7 @@ namespace Lab_Form
 
         }
 
-        //test static var
+        //12-8 test static var
         private void btnTestStaticVar_Click(object sender, EventArgs e)
         {
             MessageBox.Show($"{StaticLab.staticCount}");

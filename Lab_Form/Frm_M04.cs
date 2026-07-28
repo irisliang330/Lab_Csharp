@@ -37,11 +37,11 @@ namespace Lab_Form
         //open Frm_M11
         private void OpenFrmM11_Click(object sender, EventArgs e)
         {
-            Frm_M11 frm_M11 = new Frm_M11();
+            Frm_M11_var frm_M11 = new Frm_M11_var();
             frm_M11.Show();
         }
 
-        //無回傳值的Method
+        //5-4 無回傳值的Method
 
         private void btnUsingVoidMethod_Click(object sender, EventArgs e)
         {
@@ -54,7 +54,7 @@ namespace Lab_Form
             MessageBox.Show($"我是{name}");
         }
 
-        //呼叫其他Class的Method
+        //5-6 呼叫其他Class的Method
         private void btnUsingDiffClassMethod_Click(object sender, EventArgs e)
         {
             MyClass mc = new MyClass();
@@ -62,7 +62,7 @@ namespace Lab_Form
         }
 
 
-        //有回傳值的Method
+        //5-7 有回傳值的Method
         private void btnNotVoidMethod_Click(object sender, EventArgs e)
         {
             string birthYearResult = GetBirthYear(46);
@@ -76,7 +76,7 @@ namespace Lab_Form
 
         }
 
-        //Encapsulation Practice
+        //6-7 Encapsulation Practice
         private void btnEncapsulation_Click(object sender, EventArgs e)
         {
             MyClass mc02 = new MyClass();
@@ -97,13 +97,13 @@ namespace Lab_Form
         //Initialize Practice - MemberData
         public void NewMember_Click(object sender, EventArgs e)
         {
-            //initialize-1
+            //7-5 initialize-1
             MemberData memberData01 = new MemberData(); //create instance
             memberData01.Name = "John";
             memberData01.PhoneNumber = "1234567890";
             memberData01.BirthDate = new DateTime(1990, 8, 20);
 
-            //initialize-2
+            //7-6 initialize-2
             MemberData memberData02 = new MemberData()
             {
                 Name = "Alice",
@@ -129,7 +129,7 @@ namespace Lab_Form
                 memberData01.BirthDate));
         }
 
-        // Binding Event and Method
+        //8-1  Binding Event and Method
         private void btnEventBinding_Click(object sender, EventArgs e)
         {
             //from Designer.cs
@@ -157,7 +157,7 @@ namespace Lab_Form
             MessageBox.Show("Register Event 繫結01");
         }
 
-        //Using Delegate
+        //8-4 Using Delegate
         private void btnDelegate_Click(object sender, EventArgs e)
         {
             Payment pay;

@@ -1,6 +1,6 @@
 ﻿namespace Lab_Form
 {
-    partial class Frm_M13
+    partial class Frm_M13_CTS
     {
         /// <summary>
         /// Required designer variable.

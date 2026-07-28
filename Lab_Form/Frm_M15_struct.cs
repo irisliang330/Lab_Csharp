@@ -17,11 +17,11 @@ namespace Lab_Form
             InitializeComponent();
         }
 
-        // 15-10 struct
+        //15-10 struct
 
         string productResult = "資料\n";
 
-        // input
+        //input
         private void btnUserCommit_Click(object sender, EventArgs e)
         {
             Product product;

@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace Lab_Form
 {
-    public partial class Frm_M13 : Form
+    public partial class Frm_M13_CTS : Form
     {
-        public Frm_M13()
+        public Frm_M13_CTS()
         {
             InitializeComponent();
         }

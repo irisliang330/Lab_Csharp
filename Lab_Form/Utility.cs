@@ -13,14 +13,14 @@ namespace Lab_Form
         public DateTime BirthDate;
     }
 
-    // instance var vs static var
+    //12-7 instance var vs static var
     public class StaticLab
     {
         public int instanceCount;
         public static int staticCount;
     }
 
-    // Enum
+    //15-1 Enum
     public enum Role { Admin, UserRD, UserMKT }
 
     //15-10 struct
