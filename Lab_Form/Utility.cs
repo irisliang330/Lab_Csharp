@@ -19,4 +19,7 @@ namespace Lab_Form
         public int instanceCount;
         public static int staticCount;
     }
+
+    // Enum
+    public enum Role { Admin, UserRD, UserMKT }
 }

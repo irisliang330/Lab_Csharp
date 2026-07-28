@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -98,7 +99,7 @@ namespace Lab_Form
         {
             int A = 300;
             int B = 200;
-            PassByOut(out A,out B);
+            PassByOut(out A, out B);
             MessageBox.Show($"A = {A} B= {B}"); //A=600
         }
 
@@ -119,7 +120,7 @@ namespace Lab_Form
             MessageBox.Show(mathTotalScore);
         }
 
-        string CalculateTotalScore(string course,params int[] scores)
+        string CalculateTotalScore(string course, params int[] scores)
         {
             int totalScore = 0;
 
@@ -129,6 +130,84 @@ namespace Lab_Form
             }
 
             return $"{course}的總成績: {totalScore} 分";
+        }
+
+        //15-1 Enum
+        private void btnProduct_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("access product");
+        }
+
+        //Authorize by Enum
+        private void btnAuthorizeByEnum_Click(object sender, EventArgs e)
+        {
+            Role userRole = Role.Admin;
+
+            if (userRole == Role.Admin)
+            {
+                btnProduct.Enabled = true;
+            }
+            else
+            {
+                btnProduct.Enabled = false;
+            }
+        }
+
+        //Authorize by Magic Num
+        private void btnAuthorizeByMagicNum_Click(object sender, EventArgs e)
+        {
+            int userRole = 2; //1 for admin
+            int admin = 1;
+            int userRD = 2;
+
+            //測試中，上線拿掉
+            admin = 10000;
+
+            if (userRole == admin)
+            {
+                btnProduct.Enabled = true;
+            }
+            else
+            {
+                btnProduct.Enabled = false;
+            }
+
+        }
+
+        //Authorize By Const Num
+        private void btnAuthorizeByConstNum_Click(object sender, EventArgs e)
+        {
+            int userRole = 1;
+            const int admin = 1;   //1 for admin
+            const int userRD = 2;  //2 for userRD
+
+            if (userRole == admin)
+            {
+                btnProduct.Enabled = true;
+            }
+            else
+            {
+                btnProduct.Enabled = false;
+            }
+        }
+
+        // Authorize By Switch Enum
+        private void btnbtnAuthorizeBySwitchEnum_Click(object sender, EventArgs e)
+        {
+            Role userRole = Role.Admin;
+
+            switch (userRole)
+            {
+                case Role.Admin:
+                    btnProduct.Enabled = true;
+                    break;
+                case Role.UserRD:
+                    btnProduct.Enabled = false;
+                    break;
+                case Role.UserMKT:
+                    btnProduct.Enabled = false;
+                    break;
+            }
         }
     }
 }

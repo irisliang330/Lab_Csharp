@@ -36,6 +36,11 @@
             this.btnPassByRef = new System.Windows.Forms.Button();
             this.btnPassByOut = new System.Windows.Forms.Button();
             this.btnUsingParams = new System.Windows.Forms.Button();
+            this.btnProduct = new System.Windows.Forms.Button();
+            this.btnAuthorizeByEnum = new System.Windows.Forms.Button();
+            this.btnAuthorizeByMagicNum = new System.Windows.Forms.Button();
+            this.btnAuthorizeByConstNum = new System.Windows.Forms.Button();
+            this.btnAuthorizeBySwitchEnum = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnValueType
@@ -125,11 +130,72 @@
             this.btnUsingParams.UseVisualStyleBackColor = true;
             this.btnUsingParams.Click += new System.EventHandler(this.btnUsingParams_Click);
             // 
+            // btnProduct
+            // 
+            this.btnProduct.Enabled = false;
+            this.btnProduct.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.btnProduct.Location = new System.Drawing.Point(392, 32);
+            this.btnProduct.Name = "btnProduct";
+            this.btnProduct.Size = new System.Drawing.Size(120, 44);
+            this.btnProduct.TabIndex = 3;
+            this.btnProduct.Text = "Product";
+            this.btnProduct.UseVisualStyleBackColor = true;
+            this.btnProduct.Click += new System.EventHandler(this.btnProduct_Click);
+            // 
+            // btnAuthorizeByEnum
+            // 
+            this.btnAuthorizeByEnum.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.btnAuthorizeByEnum.Location = new System.Drawing.Point(392, 224);
+            this.btnAuthorizeByEnum.Name = "btnAuthorizeByEnum";
+            this.btnAuthorizeByEnum.Size = new System.Drawing.Size(120, 44);
+            this.btnAuthorizeByEnum.TabIndex = 3;
+            this.btnAuthorizeByEnum.Text = "Authorize By Enum";
+            this.btnAuthorizeByEnum.UseVisualStyleBackColor = true;
+            this.btnAuthorizeByEnum.Click += new System.EventHandler(this.btnAuthorizeByEnum_Click);
+            // 
+            // btnAuthorizeByMagicNum
+            // 
+            this.btnAuthorizeByMagicNum.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.btnAuthorizeByMagicNum.Location = new System.Drawing.Point(392, 93);
+            this.btnAuthorizeByMagicNum.Name = "btnAuthorizeByMagicNum";
+            this.btnAuthorizeByMagicNum.Size = new System.Drawing.Size(120, 44);
+            this.btnAuthorizeByMagicNum.TabIndex = 3;
+            this.btnAuthorizeByMagicNum.Text = "Authorize By Magic Number";
+            this.btnAuthorizeByMagicNum.UseVisualStyleBackColor = true;
+            this.btnAuthorizeByMagicNum.Click += new System.EventHandler(this.btnAuthorizeByMagicNum_Click);
+            // 
+            // btnAuthorizeByConstNum
+            // 
+            this.btnAuthorizeByConstNum.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.btnAuthorizeByConstNum.Location = new System.Drawing.Point(392, 156);
+            this.btnAuthorizeByConstNum.Name = "btnAuthorizeByConstNum";
+            this.btnAuthorizeByConstNum.Size = new System.Drawing.Size(120, 44);
+            this.btnAuthorizeByConstNum.TabIndex = 3;
+            this.btnAuthorizeByConstNum.Text = "Authorize By Const Num";
+            this.btnAuthorizeByConstNum.UseVisualStyleBackColor = true;
+            this.btnAuthorizeByConstNum.Click += new System.EventHandler(this.btnAuthorizeByConstNum_Click);
+            // 
+            // btnAuthorizeBySwitchEnum
+            // 
+            this.btnAuthorizeBySwitchEnum.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.btnAuthorizeBySwitchEnum.Location = new System.Drawing.Point(392, 274);
+            this.btnAuthorizeBySwitchEnum.Name = "btnAuthorizeBySwitchEnum";
+            this.btnAuthorizeBySwitchEnum.Size = new System.Drawing.Size(120, 44);
+            this.btnAuthorizeBySwitchEnum.TabIndex = 3;
+            this.btnAuthorizeBySwitchEnum.Text = "Authorize By Switch Enum";
+            this.btnAuthorizeBySwitchEnum.UseVisualStyleBackColor = true;
+            this.btnAuthorizeBySwitchEnum.Click += new System.EventHandler(this.btnbtnAuthorizeBySwitchEnum_Click);
+            // 
             // Frm_M13
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnAuthorizeByConstNum);
+            this.Controls.Add(this.btnAuthorizeByMagicNum);
+            this.Controls.Add(this.btnAuthorizeBySwitchEnum);
+            this.Controls.Add(this.btnAuthorizeByEnum);
+            this.Controls.Add(this.btnProduct);
             this.Controls.Add(this.btnUsingParams);
             this.Controls.Add(this.btnPassByOut);
             this.Controls.Add(this.txtReferenceType);
@@ -155,5 +221,10 @@
         private System.Windows.Forms.Button btnPassByRef;
         private System.Windows.Forms.Button btnPassByOut;
         private System.Windows.Forms.Button btnUsingParams;
+        private System.Windows.Forms.Button btnProduct;
+        private System.Windows.Forms.Button btnAuthorizeByEnum;
+        private System.Windows.Forms.Button btnAuthorizeByMagicNum;
+        private System.Windows.Forms.Button btnAuthorizeByConstNum;
+        private System.Windows.Forms.Button btnAuthorizeBySwitchEnum;
     }
 }
