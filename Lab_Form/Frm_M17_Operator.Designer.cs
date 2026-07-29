@@ -33,6 +33,8 @@
             this.txtScore = new System.Windows.Forms.TextBox();
             this.btnGrade = new System.Windows.Forms.Button();
             this.labGrade = new System.Windows.Forms.Label();
+            this.btnWhile = new System.Windows.Forms.Button();
+            this.btnDoWhile = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnReverse
@@ -53,7 +55,7 @@
             this.btnTanary.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.btnTanary.Font = new System.Drawing.Font("微軟正黑體", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.btnTanary.ForeColor = System.Drawing.SystemColors.Info;
-            this.btnTanary.Location = new System.Drawing.Point(25, 99);
+            this.btnTanary.Location = new System.Drawing.Point(25, 85);
             this.btnTanary.Name = "btnTanary";
             this.btnTanary.Size = new System.Drawing.Size(243, 40);
             this.btnTanary.TabIndex = 0;
@@ -73,7 +75,7 @@
             this.btnGrade.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.btnGrade.Font = new System.Drawing.Font("微軟正黑體", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.btnGrade.ForeColor = System.Drawing.SystemColors.Info;
-            this.btnGrade.Location = new System.Drawing.Point(367, 64);
+            this.btnGrade.Location = new System.Drawing.Point(367, 55);
             this.btnGrade.Name = "btnGrade";
             this.btnGrade.Size = new System.Drawing.Size(89, 40);
             this.btnGrade.TabIndex = 0;
@@ -84,12 +86,38 @@
             // labGrade
             // 
             this.labGrade.AutoSize = true;
-            this.labGrade.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.labGrade.Location = new System.Drawing.Point(374, 115);
+            this.labGrade.Font = new System.Drawing.Font("微軟正黑體", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.labGrade.Location = new System.Drawing.Point(473, 69);
             this.labGrade.Name = "labGrade";
-            this.labGrade.Size = new System.Drawing.Size(60, 17);
+            this.labGrade.Size = new System.Drawing.Size(96, 26);
             this.labGrade.TabIndex = 2;
             this.labGrade.Text = "成績分級";
+            // 
+            // btnWhile
+            // 
+            this.btnWhile.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.btnWhile.Font = new System.Drawing.Font("微軟正黑體", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.btnWhile.ForeColor = System.Drawing.SystemColors.Info;
+            this.btnWhile.Location = new System.Drawing.Point(367, 155);
+            this.btnWhile.Name = "btnWhile";
+            this.btnWhile.Size = new System.Drawing.Size(89, 40);
+            this.btnWhile.TabIndex = 0;
+            this.btnWhile.Text = "While";
+            this.btnWhile.UseVisualStyleBackColor = false;
+            this.btnWhile.Click += new System.EventHandler(this.btnWhile_Click);
+            // 
+            // btnDoWhile
+            // 
+            this.btnDoWhile.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.btnDoWhile.Font = new System.Drawing.Font("微軟正黑體", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.btnDoWhile.ForeColor = System.Drawing.SystemColors.Info;
+            this.btnDoWhile.Location = new System.Drawing.Point(367, 215);
+            this.btnDoWhile.Name = "btnDoWhile";
+            this.btnDoWhile.Size = new System.Drawing.Size(89, 40);
+            this.btnDoWhile.TabIndex = 0;
+            this.btnDoWhile.Text = "Do While";
+            this.btnDoWhile.UseVisualStyleBackColor = false;
+            this.btnDoWhile.Click += new System.EventHandler(this.btnDoWhile_Click);
             // 
             // Frm_M17_Operator
             // 
@@ -99,6 +127,8 @@
             this.Controls.Add(this.labGrade);
             this.Controls.Add(this.txtScore);
             this.Controls.Add(this.btnTanary);
+            this.Controls.Add(this.btnDoWhile);
+            this.Controls.Add(this.btnWhile);
             this.Controls.Add(this.btnGrade);
             this.Controls.Add(this.btnReverse);
             this.Name = "Frm_M17_Operator";
@@ -115,5 +145,7 @@
         private System.Windows.Forms.TextBox txtScore;
         private System.Windows.Forms.Button btnGrade;
         private System.Windows.Forms.Label labGrade;
+        private System.Windows.Forms.Button btnWhile;
+        private System.Windows.Forms.Button btnDoWhile;
     }
 }

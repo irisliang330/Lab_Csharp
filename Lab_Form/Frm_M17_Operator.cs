@@ -41,19 +41,39 @@ namespace Lab_Form
         //17-3 Tenary Operator
         private void btnTenary_Click(object sender, EventArgs e)
         {
-            btnTanary.BackColor = flag? Color.Blue : Color.Red;
+            btnTanary.BackColor = flag ? Color.Blue : Color.Red;
             flag = !flag;
         }
 
-        //18-6 else if - score grade
+
         private void btnGrade_Click(object sender, EventArgs e)
         {
-            int score = int.Parse(txtScore.Text);
+            //int score = int.Parse(txtScore.Text);
+            bool isNumUnder100 = false;
+            int score = 0;
+
+            //todo try Parse
+            if (int.TryParse(txtScore.Text, out int result) && result >= 0 && result <= 100)
+
+                if (isNumUnder100)
+                {
+                    score = int.Parse(txtScore.Text);
+                }
+                else
+                {
+                    MessageBox.Show("請輸入0~100的數字");
+                    txtScore.Clear();
+                    txtScore.Focus();
+                    isNumUnder100 = false;
+                }
+
+            //todo 18-6 else if - score grade
 
             if (score >= 90 && score <= 100)
             {
                 labGrade.Text = "A";
-            }else if (score >=80 && score < 90)
+            }
+            else if (score >= 80 && score < 90)
             {
                 labGrade.Text = "B";
             }
@@ -70,6 +90,56 @@ namespace Lab_Form
                 labGrade.Text = "E";
             }
 
+            ////todo 18-9 switch 寫法
+
+            //int scoreSW = 0;
+            //switch (scoreSW)
+            //{
+            //    case A:
+            //        labGrade.Text = "A";
+            //        break;
+
+            //    case B:
+            //        labGrade.Text = "B";
+            //        break;
+            //    case C:
+            //        labGrade.Text = "C";
+            //        break;
+            //    case D:
+            //        labGrade.Text = "D";
+            //        break;
+            //    case E:
+            //        labGrade.Text = "E";
+            //        break;
+            //}
+        }
+
+        // 18-11 while
+
+        int i = 10;
+        string result = "";
+        private void btnWhile_Click(object sender, EventArgs e)
+        {
+
+            while (i<10)
+            {
+                result += i + "\n";
+                i++;
+            }
+            MessageBox.Show(result);
+        }
+        
+        // 18-13 do while
+        private void btnDoWhile_Click(object sender, EventArgs e)
+        {
+            do
+            {
+                result += i + "\n";
+                i++;
+            }
+            while (i<10);
+
+            MessageBox.Show(result);
         }
     }
 }
