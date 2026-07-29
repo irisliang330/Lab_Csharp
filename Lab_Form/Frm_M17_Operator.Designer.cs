@@ -38,6 +38,8 @@
             this.btnFor01 = new System.Windows.Forms.Button();
             this.btnFor02 = new System.Windows.Forms.Button();
             this.btnForeach = new System.Windows.Forms.Button();
+            this.btnBreak = new System.Windows.Forms.Button();
+            this.btnContinue = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnReverse
@@ -161,6 +163,32 @@
             this.btnForeach.UseVisualStyleBackColor = false;
             this.btnForeach.Click += new System.EventHandler(this.btnForeach_Click);
             // 
+            // btnBreak
+            // 
+            this.btnBreak.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.btnBreak.Font = new System.Drawing.Font("微軟正黑體", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.btnBreak.ForeColor = System.Drawing.SystemColors.Info;
+            this.btnBreak.Location = new System.Drawing.Point(632, 155);
+            this.btnBreak.Name = "btnBreak";
+            this.btnBreak.Size = new System.Drawing.Size(89, 40);
+            this.btnBreak.TabIndex = 0;
+            this.btnBreak.Text = "break";
+            this.btnBreak.UseVisualStyleBackColor = false;
+            this.btnBreak.Click += new System.EventHandler(this.btnBreak_Click);
+            // 
+            // btnContinue
+            // 
+            this.btnContinue.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.btnContinue.Font = new System.Drawing.Font("微軟正黑體", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.btnContinue.ForeColor = System.Drawing.SystemColors.Info;
+            this.btnContinue.Location = new System.Drawing.Point(632, 215);
+            this.btnContinue.Name = "btnContinue";
+            this.btnContinue.Size = new System.Drawing.Size(89, 40);
+            this.btnContinue.TabIndex = 0;
+            this.btnContinue.Text = "continue";
+            this.btnContinue.UseVisualStyleBackColor = false;
+            this.btnContinue.Click += new System.EventHandler(this.btnContinue_Click);
+            // 
             // Frm_M17_Operator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -170,6 +198,8 @@
             this.Controls.Add(this.txtScore);
             this.Controls.Add(this.btnTanary);
             this.Controls.Add(this.btnDoWhile);
+            this.Controls.Add(this.btnContinue);
+            this.Controls.Add(this.btnBreak);
             this.Controls.Add(this.btnForeach);
             this.Controls.Add(this.btnFor02);
             this.Controls.Add(this.btnFor01);
@@ -195,5 +225,7 @@
         private System.Windows.Forms.Button btnFor01;
         private System.Windows.Forms.Button btnFor02;
         private System.Windows.Forms.Button btnForeach;
+        private System.Windows.Forms.Button btnBreak;
+        private System.Windows.Forms.Button btnContinue;
     }
 }

@@ -113,11 +113,10 @@ namespace Lab_Form
 
         // 18-11 while
 
-        int i = 10;
         string result = "";
         private void btnWhile_Click(object sender, EventArgs e)
         {
-
+            int i = 0;
             while (i < 10)
             {
                 result += i + "\n";
@@ -129,6 +128,8 @@ namespace Lab_Form
         // 18-13 do while
         private void btnDoWhile_Click(object sender, EventArgs e)
         {
+            int i = 0;
+
             do
             {
                 result += i + "\n";
@@ -176,5 +177,49 @@ namespace Lab_Form
 
             MessageBox.Show(resultForeach);
         }
+
+        //18-21 break
+        private void btnBreak_Click(object sender, EventArgs e)
+        {
+            string resultBreak = "";
+            int i = 0;
+            do
+            {
+                if (i>5)
+                {
+                    break;
+                }
+
+                resultBreak += i + "\n";
+                i++;
+            }
+            while (i<10);
+
+            MessageBox.Show(resultBreak);
+        }
+
+        private void btnContinue_Click(object sender, EventArgs e)
+        {
+            string resultContinue = "";
+            int i = 0;
+
+            while (i<10)
+            {
+                if (i%2==0) //even
+                {
+                    i++;
+                    continue;
+                }
+
+                resultContinue += i + "\n";
+                i++;
+            }
+
+            MessageBox.Show(resultContinue);
+        }
+
+        //18-22 continue
+
+
     }
 }

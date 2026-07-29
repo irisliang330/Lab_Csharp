@@ -21,7 +21,9 @@ namespace Lab_Form
             //Application.Run(new Frm_M11());
             //Application.Run(new Frm_M13_CTS());
             //Application.Run(new Frm_M15_struct("多載"));
-            Application.Run(new Frm_M17_Operator());
+            //Application.Run(new Frm_M17_Operator());
+            Application.Run(new Frm_M19_Array());
+
             //Application.Run(new Frm_HelloForm());
 
 
