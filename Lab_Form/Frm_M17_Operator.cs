@@ -44,5 +44,32 @@ namespace Lab_Form
             btnTanary.BackColor = flag? Color.Blue : Color.Red;
             flag = !flag;
         }
+
+        //18-6 else if - score grade
+        private void btnGrade_Click(object sender, EventArgs e)
+        {
+            int score = int.Parse(txtScore.Text);
+
+            if (score >= 90 && score <= 100)
+            {
+                labGrade.Text = "A";
+            }else if (score >=80 && score < 90)
+            {
+                labGrade.Text = "B";
+            }
+            else if (score >= 70 && score < 80)
+            {
+                labGrade.Text = "C";
+            }
+            else if (score >= 60 && score < 70)
+            {
+                labGrade.Text = "D";
+            }
+            else
+            {
+                labGrade.Text = "E";
+            }
+
+        }
     }
 }
