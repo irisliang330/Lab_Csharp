@@ -49,46 +49,43 @@ namespace Lab_Form
         private void btnGrade_Click(object sender, EventArgs e)
         {
             //int score = int.Parse(txtScore.Text);
-            bool isNumUnder100 = false;
-            int score = 0;
+            //int score = 0;
 
-            //todo try Parse
-            if (int.TryParse(txtScore.Text, out int result) && result >= 0 && result <= 100)
+            //輸入控制 try Parse & 0~100
 
-                if (isNumUnder100)
+            if (int.TryParse(txtScore.Text, out int score) && score >= 0 && score <= 100)
+            {
+                //18-6 else if - score grade
+                if (score >= 90 && score <= 100)
                 {
-                    score = int.Parse(txtScore.Text);
+                    labGrade.Text = "A";
+                }
+                else if (score >= 80 && score < 90)
+                {
+                    labGrade.Text = "B";
+                }
+                else if (score >= 70 && score < 80)
+                {
+                    labGrade.Text = "C";
+                }
+                else if (score >= 60 && score < 70)
+                {
+                    labGrade.Text = "D";
                 }
                 else
                 {
-                    MessageBox.Show("請輸入0~100的數字");
-                    txtScore.Clear();
-                    txtScore.Focus();
-                    isNumUnder100 = false;
+                    labGrade.Text = "E";
                 }
 
-            //todo 18-6 else if - score grade
-
-            if (score >= 90 && score <= 100)
-            {
-                labGrade.Text = "A";
-            }
-            else if (score >= 80 && score < 90)
-            {
-                labGrade.Text = "B";
-            }
-            else if (score >= 70 && score < 80)
-            {
-                labGrade.Text = "C";
-            }
-            else if (score >= 60 && score < 70)
-            {
-                labGrade.Text = "D";
             }
             else
             {
-                labGrade.Text = "E";
+                MessageBox.Show("請輸入0~100阿拉伯數字");
+                txtScore.Clear();
+                txtScore.Focus();
             }
+
+
 
             ////todo 18-9 switch 寫法
 
@@ -121,14 +118,14 @@ namespace Lab_Form
         private void btnWhile_Click(object sender, EventArgs e)
         {
 
-            while (i<10)
+            while (i < 10)
             {
                 result += i + "\n";
                 i++;
             }
             MessageBox.Show(result);
         }
-        
+
         // 18-13 do while
         private void btnDoWhile_Click(object sender, EventArgs e)
         {
@@ -137,7 +134,7 @@ namespace Lab_Form
                 result += i + "\n";
                 i++;
             }
-            while (i<10);
+            while (i < 10);
 
             MessageBox.Show(result);
         }
