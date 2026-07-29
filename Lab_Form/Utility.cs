@@ -36,6 +36,13 @@ namespace Lab_Form
             ProductPrice = decimal.Parse(productPrice);
         }
 
+        //16-6 Try Parse
+        public Product(string productName, decimal productPrice)
+        {
+            ProductName = productName;
+            ProductPrice = productPrice;
+        }
+
         //15-11 var to property in struct
         public string ProductName { get; set; }
         public decimal ProductPrice { get; set; }

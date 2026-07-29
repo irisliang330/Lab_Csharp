@@ -43,6 +43,23 @@ namespace Lab_Form
             product.ProductPrice = decimal.Parse(txtProductPrice.Text);
 
             productResult += $"\n名稱:{product.ProductName}\n價格:{product.ProductPrice}\n";
+
+
+            //16-6 Try Parse
+            decimal price = 0;
+            bool isNum = decimal.TryParse(txtProductName.Text, out price);
+
+            if (isNum ==true)
+            {
+                Product pro01 = new Product(txtProductName.Text, price)
+            }
+            else
+            {
+                MessageBox.Show("價格請輸入數字");
+                txtProductPrice.Clear();
+                txtProductPrice.Focus();
+            }
+
         }
 
         //output
