@@ -18,8 +18,8 @@ namespace Lab_Form
         }
 
         //15-14 Overload
-        public Frm_M15_struct(string Name) 
-        { 
+        public Frm_M15_struct(string Name)
+        {
             InitializeComponent();
             this.Text = Name;
         }
@@ -46,12 +46,13 @@ namespace Lab_Form
 
 
             //16-6 Try Parse
-            decimal price = 0;
-            bool isNum = decimal.TryParse(txtProductName.Text, out price);
+            decimal productPrice = 0;
+            bool isNum = decimal.TryParse(txtProductName.Text, out productPrice);
 
-            if (isNum ==true)
+            if (isNum == true)
             {
-                Product pro01 = new Product(txtProductName.Text, price)
+                Product productTryParse = new Product(txtProductName.Text, productPrice);
+                productResult += $"\n名稱:{productTryParse.ProductName}\n價格:{productTryParse.ProductPrice}\n";
             }
             else
             {
@@ -59,6 +60,7 @@ namespace Lab_Form
                 txtProductPrice.Clear();
                 txtProductPrice.Focus();
             }
+
 
         }
 
