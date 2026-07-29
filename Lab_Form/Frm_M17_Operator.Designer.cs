@@ -35,6 +35,9 @@
             this.labGrade = new System.Windows.Forms.Label();
             this.btnWhile = new System.Windows.Forms.Button();
             this.btnDoWhile = new System.Windows.Forms.Button();
+            this.btnFor01 = new System.Windows.Forms.Button();
+            this.btnFor02 = new System.Windows.Forms.Button();
+            this.btnForeach = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnReverse
@@ -119,6 +122,45 @@
             this.btnDoWhile.UseVisualStyleBackColor = false;
             this.btnDoWhile.Click += new System.EventHandler(this.btnDoWhile_Click);
             // 
+            // btnFor01
+            // 
+            this.btnFor01.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.btnFor01.Font = new System.Drawing.Font("微軟正黑體", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.btnFor01.ForeColor = System.Drawing.SystemColors.Info;
+            this.btnFor01.Location = new System.Drawing.Point(500, 155);
+            this.btnFor01.Name = "btnFor01";
+            this.btnFor01.Size = new System.Drawing.Size(89, 40);
+            this.btnFor01.TabIndex = 0;
+            this.btnFor01.Text = "For 01";
+            this.btnFor01.UseVisualStyleBackColor = false;
+            this.btnFor01.Click += new System.EventHandler(this.btnFor01_Click);
+            // 
+            // btnFor02
+            // 
+            this.btnFor02.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.btnFor02.Font = new System.Drawing.Font("微軟正黑體", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.btnFor02.ForeColor = System.Drawing.SystemColors.Info;
+            this.btnFor02.Location = new System.Drawing.Point(500, 215);
+            this.btnFor02.Name = "btnFor02";
+            this.btnFor02.Size = new System.Drawing.Size(89, 40);
+            this.btnFor02.TabIndex = 0;
+            this.btnFor02.Text = "For 02";
+            this.btnFor02.UseVisualStyleBackColor = false;
+            this.btnFor02.Click += new System.EventHandler(this.btnFor02_Click);
+            // 
+            // btnForeach
+            // 
+            this.btnForeach.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.btnForeach.Font = new System.Drawing.Font("微軟正黑體", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.btnForeach.ForeColor = System.Drawing.SystemColors.Info;
+            this.btnForeach.Location = new System.Drawing.Point(500, 283);
+            this.btnForeach.Name = "btnForeach";
+            this.btnForeach.Size = new System.Drawing.Size(89, 40);
+            this.btnForeach.TabIndex = 0;
+            this.btnForeach.Text = "foreach";
+            this.btnForeach.UseVisualStyleBackColor = false;
+            this.btnForeach.Click += new System.EventHandler(this.btnForeach_Click);
+            // 
             // Frm_M17_Operator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -128,6 +170,9 @@
             this.Controls.Add(this.txtScore);
             this.Controls.Add(this.btnTanary);
             this.Controls.Add(this.btnDoWhile);
+            this.Controls.Add(this.btnForeach);
+            this.Controls.Add(this.btnFor02);
+            this.Controls.Add(this.btnFor01);
             this.Controls.Add(this.btnWhile);
             this.Controls.Add(this.btnGrade);
             this.Controls.Add(this.btnReverse);
@@ -147,5 +192,8 @@
         private System.Windows.Forms.Label labGrade;
         private System.Windows.Forms.Button btnWhile;
         private System.Windows.Forms.Button btnDoWhile;
+        private System.Windows.Forms.Button btnFor01;
+        private System.Windows.Forms.Button btnFor02;
+        private System.Windows.Forms.Button btnForeach;
     }
 }

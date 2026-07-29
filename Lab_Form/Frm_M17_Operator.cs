@@ -138,5 +138,43 @@ namespace Lab_Form
 
             MessageBox.Show(result);
         }
+
+        //18-15 for loop 01
+        private void btnFor01_Click(object sender, EventArgs e)
+        {
+            string result01 = "";
+            
+            for (int i = 0; i < 10; i++)
+            {
+                result01 += i + "\n";
+            }
+
+            MessageBox.Show(result01);
+        }
+
+        //18-16 for loop 02
+        private void btnFor02_Click(object sender, EventArgs e)
+        {
+            string result02 = "";
+            for (int x = 100, y = 10, z = 1; x / y > z; x /= 2, y -= 2 , z++)
+            {
+                result02 += $"x :{x} \t y:{y}\t z:{z} \n";
+            }
+
+            MessageBox.Show(result02);
+        }
+
+        //18-18 foreach
+        private void btnForeach_Click(object sender, EventArgs e)
+        {
+            string resultForeach = "";
+            int[] arr = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+            foreach (int i in arr)
+            {
+                resultForeach += i + "\n";
+            }
+
+            MessageBox.Show(resultForeach);
+        }
     }
 }
