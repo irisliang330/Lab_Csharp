@@ -17,7 +17,7 @@ namespace Lab_Form
             InitializeComponent();
         }
 
-        //Overload
+        //15-14 Overload
         public Frm_M15_struct(string Name) 
         { 
             InitializeComponent();
