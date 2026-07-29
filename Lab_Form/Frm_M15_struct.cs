@@ -17,6 +17,13 @@ namespace Lab_Form
             InitializeComponent();
         }
 
+        //Overload
+        public Frm_M15_struct(string Name) 
+        { 
+            InitializeComponent();
+            this.Text = Name;
+        }
+
         //15-10 struct
 
         string productResult = "資料\n";
@@ -27,7 +34,10 @@ namespace Lab_Form
             //Product product;
 
             //15-11 var to property in struct
-            Product product = new Product();
+            //Product product = new Product();
+
+            //15-12 struct constructor
+            Product product = new Product(txtProductName.Text, txtProductPrice.Text);
 
             product.ProductName = txtProductName.Text;
             product.ProductPrice = decimal.Parse(txtProductPrice.Text);

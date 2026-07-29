@@ -29,8 +29,18 @@ namespace Lab_Form
         //public string ProductName;
         //public decimal ProductPrice;
 
+        //15-12 struct constructor
+        public Product(string productName, string productPrice)
+        {
+            ProductName = productName;
+            ProductPrice = decimal.Parse(productPrice);
+        }
+
         //15-11 var to property in struct
         public string ProductName { get; set; }
         public decimal ProductPrice { get; set; }
+
+        
+
     }
 }
