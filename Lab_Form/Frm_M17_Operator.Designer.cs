@@ -40,6 +40,7 @@
             this.btnForeach = new System.Windows.Forms.Button();
             this.btnBreak = new System.Windows.Forms.Button();
             this.btnContinue = new System.Windows.Forms.Button();
+            this.btnGradeBySwitch = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnReverse
@@ -92,7 +93,7 @@
             // 
             this.labGrade.AutoSize = true;
             this.labGrade.Font = new System.Drawing.Font("微軟正黑體", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.labGrade.Location = new System.Drawing.Point(473, 69);
+            this.labGrade.Location = new System.Drawing.Point(493, 25);
             this.labGrade.Name = "labGrade";
             this.labGrade.Size = new System.Drawing.Size(96, 26);
             this.labGrade.TabIndex = 2;
@@ -103,7 +104,7 @@
             this.btnWhile.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.btnWhile.Font = new System.Drawing.Font("微軟正黑體", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.btnWhile.ForeColor = System.Drawing.SystemColors.Info;
-            this.btnWhile.Location = new System.Drawing.Point(367, 155);
+            this.btnWhile.Location = new System.Drawing.Point(367, 213);
             this.btnWhile.Name = "btnWhile";
             this.btnWhile.Size = new System.Drawing.Size(89, 40);
             this.btnWhile.TabIndex = 0;
@@ -116,7 +117,7 @@
             this.btnDoWhile.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.btnDoWhile.Font = new System.Drawing.Font("微軟正黑體", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.btnDoWhile.ForeColor = System.Drawing.SystemColors.Info;
-            this.btnDoWhile.Location = new System.Drawing.Point(367, 215);
+            this.btnDoWhile.Location = new System.Drawing.Point(367, 273);
             this.btnDoWhile.Name = "btnDoWhile";
             this.btnDoWhile.Size = new System.Drawing.Size(89, 40);
             this.btnDoWhile.TabIndex = 0;
@@ -129,7 +130,7 @@
             this.btnFor01.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.btnFor01.Font = new System.Drawing.Font("微軟正黑體", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.btnFor01.ForeColor = System.Drawing.SystemColors.Info;
-            this.btnFor01.Location = new System.Drawing.Point(500, 155);
+            this.btnFor01.Location = new System.Drawing.Point(500, 213);
             this.btnFor01.Name = "btnFor01";
             this.btnFor01.Size = new System.Drawing.Size(89, 40);
             this.btnFor01.TabIndex = 0;
@@ -142,7 +143,7 @@
             this.btnFor02.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.btnFor02.Font = new System.Drawing.Font("微軟正黑體", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.btnFor02.ForeColor = System.Drawing.SystemColors.Info;
-            this.btnFor02.Location = new System.Drawing.Point(500, 215);
+            this.btnFor02.Location = new System.Drawing.Point(500, 273);
             this.btnFor02.Name = "btnFor02";
             this.btnFor02.Size = new System.Drawing.Size(89, 40);
             this.btnFor02.TabIndex = 0;
@@ -155,7 +156,7 @@
             this.btnForeach.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.btnForeach.Font = new System.Drawing.Font("微軟正黑體", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.btnForeach.ForeColor = System.Drawing.SystemColors.Info;
-            this.btnForeach.Location = new System.Drawing.Point(500, 283);
+            this.btnForeach.Location = new System.Drawing.Point(500, 341);
             this.btnForeach.Name = "btnForeach";
             this.btnForeach.Size = new System.Drawing.Size(89, 40);
             this.btnForeach.TabIndex = 0;
@@ -168,7 +169,7 @@
             this.btnBreak.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.btnBreak.Font = new System.Drawing.Font("微軟正黑體", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.btnBreak.ForeColor = System.Drawing.SystemColors.Info;
-            this.btnBreak.Location = new System.Drawing.Point(632, 155);
+            this.btnBreak.Location = new System.Drawing.Point(632, 213);
             this.btnBreak.Name = "btnBreak";
             this.btnBreak.Size = new System.Drawing.Size(89, 40);
             this.btnBreak.TabIndex = 0;
@@ -181,13 +182,26 @@
             this.btnContinue.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.btnContinue.Font = new System.Drawing.Font("微軟正黑體", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.btnContinue.ForeColor = System.Drawing.SystemColors.Info;
-            this.btnContinue.Location = new System.Drawing.Point(632, 215);
+            this.btnContinue.Location = new System.Drawing.Point(632, 273);
             this.btnContinue.Name = "btnContinue";
             this.btnContinue.Size = new System.Drawing.Size(89, 40);
             this.btnContinue.TabIndex = 0;
             this.btnContinue.Text = "continue";
             this.btnContinue.UseVisualStyleBackColor = false;
             this.btnContinue.Click += new System.EventHandler(this.btnContinue_Click);
+            // 
+            // btnGradeBySwitch
+            // 
+            this.btnGradeBySwitch.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.btnGradeBySwitch.Font = new System.Drawing.Font("微軟正黑體", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.btnGradeBySwitch.ForeColor = System.Drawing.SystemColors.Info;
+            this.btnGradeBySwitch.Location = new System.Drawing.Point(367, 101);
+            this.btnGradeBySwitch.Name = "btnGradeBySwitch";
+            this.btnGradeBySwitch.Size = new System.Drawing.Size(119, 40);
+            this.btnGradeBySwitch.TabIndex = 0;
+            this.btnGradeBySwitch.Text = "switch 分級";
+            this.btnGradeBySwitch.UseVisualStyleBackColor = false;
+            this.btnGradeBySwitch.Click += new System.EventHandler(this.btnGradeBySwitch_Click);
             // 
             // Frm_M17_Operator
             // 
@@ -204,6 +218,7 @@
             this.Controls.Add(this.btnFor02);
             this.Controls.Add(this.btnFor01);
             this.Controls.Add(this.btnWhile);
+            this.Controls.Add(this.btnGradeBySwitch);
             this.Controls.Add(this.btnGrade);
             this.Controls.Add(this.btnReverse);
             this.Name = "Frm_M17_Operator";
@@ -227,5 +242,6 @@
         private System.Windows.Forms.Button btnForeach;
         private System.Windows.Forms.Button btnBreak;
         private System.Windows.Forms.Button btnContinue;
+        private System.Windows.Forms.Button btnGradeBySwitch;
     }
 }

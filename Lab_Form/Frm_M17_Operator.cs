@@ -85,30 +85,41 @@ namespace Lab_Form
                 txtScore.Focus();
             }
 
+        }
 
+        //18-10 [p] grade by switch
+        private void btnGradeBySwitch_Click(object sender, EventArgs e)
+        {
 
-            ////todo 18-9 switch 寫法
+            if (int.TryParse(txtScore.Text, out int score) && score >= 0 && score <= 100)
+            {
+                switch (score / 10)
+                {
+                    case 10:
+                    case 9:
+                        labGrade.Text = "A";
+                        break;
+                    case 8:
+                        labGrade.Text = "B";
+                        break;
+                    case 7:
+                        labGrade.Text = "C";
+                        break;
+                    case 6:
+                        labGrade.Text = "D";
+                        break;
+                    default:
+                        labGrade.Text = "E";
+                        break;
+                }
+            }
+            else
+            {
+                MessageBox.Show("請輸入0~100阿拉伯數字");
+                txtScore.Clear();
+                txtScore.Focus();
+            }
 
-            //int scoreSW = 0;
-            //switch (scoreSW)
-            //{
-            //    case A:
-            //        labGrade.Text = "A";
-            //        break;
-
-            //    case B:
-            //        labGrade.Text = "B";
-            //        break;
-            //    case C:
-            //        labGrade.Text = "C";
-            //        break;
-            //    case D:
-            //        labGrade.Text = "D";
-            //        break;
-            //    case E:
-            //        labGrade.Text = "E";
-            //        break;
-            //}
         }
 
         // 18-11 while
@@ -144,7 +155,7 @@ namespace Lab_Form
         private void btnFor01_Click(object sender, EventArgs e)
         {
             string result01 = "";
-            
+
             for (int i = 0; i < 10; i++)
             {
                 result01 += i + "\n";
@@ -157,7 +168,7 @@ namespace Lab_Form
         private void btnFor02_Click(object sender, EventArgs e)
         {
             string result02 = "";
-            for (int x = 100, y = 10, z = 1; x / y > z; x /= 2, y -= 2 , z++)
+            for (int x = 100, y = 10, z = 1; x / y > z; x /= 2, y -= 2, z++)
             {
                 result02 += $"x :{x} \t y:{y}\t z:{z} \n";
             }
@@ -185,7 +196,7 @@ namespace Lab_Form
             int i = 0;
             do
             {
-                if (i>5)
+                if (i > 5)
                 {
                     break;
                 }
@@ -193,19 +204,20 @@ namespace Lab_Form
                 resultBreak += i + "\n";
                 i++;
             }
-            while (i<10);
+            while (i < 10);
 
             MessageBox.Show(resultBreak);
         }
 
+        //18-22 continue
         private void btnContinue_Click(object sender, EventArgs e)
         {
             string resultContinue = "";
             int i = 0;
 
-            while (i<10)
+            while (i < 10)
             {
-                if (i%2==0) //even
+                if (i % 2 == 0) //even
                 {
                     i++;
                     continue;
@@ -217,8 +229,6 @@ namespace Lab_Form
 
             MessageBox.Show(resultContinue);
         }
-
-        //18-22 continue
 
 
     }
