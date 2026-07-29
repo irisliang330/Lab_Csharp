@@ -26,7 +26,11 @@ namespace Lab_Form
     //15-10 struct
     public struct Product
     {
-        public string ProductName;
-        public decimal ProductPrice;
+        //public string ProductName;
+        //public decimal ProductPrice;
+
+        //15-11 var to property in struct
+        public string ProductName { get; set; }
+        public decimal ProductPrice { get; set; }
     }
 }

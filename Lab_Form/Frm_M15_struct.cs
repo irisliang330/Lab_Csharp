@@ -24,7 +24,11 @@ namespace Lab_Form
         //input
         private void btnUserCommit_Click(object sender, EventArgs e)
         {
-            Product product;
+            //Product product;
+
+            //15-11 var to property in struct
+            Product product = new Product();
+
             product.ProductName = txtProductName.Text;
             product.ProductPrice = decimal.Parse(txtProductPrice.Text);
 
