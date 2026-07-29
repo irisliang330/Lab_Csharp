@@ -47,7 +47,7 @@ namespace Lab_Form
 
             //16-6 Try Parse
             decimal productPrice = 0;
-            bool isNum = decimal.TryParse(txtProductName.Text, out productPrice);
+            bool isNum = decimal.TryParse(txtProductPrice.Text, out productPrice);
 
             if (isNum == true)
             {

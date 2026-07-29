@@ -76,6 +76,12 @@
     <Compile Include="Frm_M15_struct.Designer.cs">
       <DependentUpon>Frm_M15_struct.cs</DependentUpon>
     </Compile>
+    <Compile Include="Frm_M17_Operator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_M17_Operator.Designer.cs">
+      <DependentUpon>Frm_M17_Operator.cs</DependentUpon>
+    </Compile>
     <Compile Include="MyClass.cs" />
     <Compile Include="MyStyledButton.cs">
       <SubType>Component</SubType>
@@ -104,6 +110,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_M15_struct.resx">
       <DependentUpon>Frm_M15_struct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_M17_Operator.resx">
+      <DependentUpon>Frm_M17_Operator.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
