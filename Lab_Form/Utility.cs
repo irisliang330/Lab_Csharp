@@ -49,7 +49,7 @@ namespace Lab_Form
 
     }
 
-    //22-3 ArrayList
+    //22-3 ArrayList & 22-10 List<T>
     public class Employee
     {
         public string EName;
