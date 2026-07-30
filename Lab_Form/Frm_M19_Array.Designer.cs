@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.btnArray = new System.Windows.Forms.Button();
+            this.btnRandArray = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnArray
@@ -41,11 +42,22 @@
             this.btnArray.UseVisualStyleBackColor = true;
             this.btnArray.Click += new System.EventHandler(this.btnArray_Click);
             // 
+            // btnRandArray
+            // 
+            this.btnRandArray.Location = new System.Drawing.Point(41, 78);
+            this.btnRandArray.Name = "btnRandArray";
+            this.btnRandArray.Size = new System.Drawing.Size(75, 23);
+            this.btnRandArray.TabIndex = 0;
+            this.btnRandArray.Text = "Random Array";
+            this.btnRandArray.UseVisualStyleBackColor = true;
+            this.btnRandArray.Click += new System.EventHandler(this.btnRandArray_Click);
+            // 
             // Frm_M19_Array
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnRandArray);
             this.Controls.Add(this.btnArray);
             this.Name = "Frm_M19_Array";
             this.Text = "Frm_M19_Array";
@@ -56,5 +68,6 @@
         #endregion
 
         private System.Windows.Forms.Button btnArray;
+        private System.Windows.Forms.Button btnRandArray;
     }
 }

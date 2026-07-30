@@ -51,5 +51,59 @@ namespace Lab_Form
 
             MessageBox.Show(resultArr);
         }
+
+        //20-5 Random Array
+        private void btnRandArray_Click(object sender, EventArgs e)
+        {
+            int[] randArr01 = GetRandomArray(20);
+
+            string arrResult = "";
+
+            foreach (int num in randArr01)
+            {
+                arrResult += num + " | ";
+            }
+
+            MessageBox.Show(arrResult);
+        }
+
+
+        Random rand = new Random(123);
+
+        int[] GetRandomArray(int ArrayLength)
+        {
+            int[] arr = new int[ArrayLength];
+
+            for (int i = 0; i < arr.Length; i++)
+            {
+                arr[i] = i;
+            }
+
+            //Fisher Yates Shuffle
+            for (int i = arr.Length - 1; i > 0; i--)
+            {
+                // j:0~i
+                int j = rand.Next(i + 1);
+
+                // swap index i and j
+                (arr[i], arr[j]) = (arr[j], arr[i]);
+            }
+
+            ////rand diff num from teacher
+            //int randNum = rand.Next(100); ;
+
+            //while (Array.IndexOf(arr, randNum) != -1)
+            //{
+            //    randNum = rand.Next(100);
+            //}
+
+            //for (int j= 0; j>0 ; j--)
+            //{
+            //    int randNum02 = rand.Next(100);
+
+            //    (arr[i], arr[j]) = (arr[j], arr[i]); 
+            //}
+            return arr;
+        }
     }
 }
