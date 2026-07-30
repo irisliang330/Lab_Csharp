@@ -52,7 +52,8 @@ namespace Lab_Form
     //22-3 ArrayList
     public class Employee
     {
-        public string EmployerName;
-        public int EmployeeAge;
+        public string EName;
+        public int EAge;
+        public int EID;
     }
 }

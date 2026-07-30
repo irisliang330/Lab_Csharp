@@ -1,5 +1,4 @@
-﻿using Lab_Form;
-using System;
+﻿using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -10,19 +9,17 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Lab_Csharp
+namespace Lab_Form
 {
-    public partial class Frm_M22_ArrayList : Form
+    public partial class Frm_M22_List : Form
     {
-        public Frm_M22_ArrayList()
+        public Frm_M22_List()
         {
             InitializeComponent();
         }
 
-
-        
-        //22-4 ArrayList 
-        ArrayList AlEmployee = new ArrayList();
+        //22-10 List<T>
+        List<Employee> lEmployee = new List<Employee>();
         Employee employee = new Employee();
 
         //add
@@ -30,7 +27,8 @@ namespace Lab_Csharp
         {
             employee.EName = txtEmployeeName.Text;
 
-            if (int.TryParse(txtEmployeeAge.Text, out int age)){
+            if (int.TryParse(txtEmployeeAge.Text, out int age))
+            {
                 employee.EAge = age;
             }
             else
@@ -40,7 +38,7 @@ namespace Lab_Csharp
                 txtEmployeeAge.Focus();
             }
 
-            if (int.TryParse(txtEmployeeID.Text,out int eID))
+            if (int.TryParse(txtEmployeeID.Text, out int eID))
             {
                 employee.EID = eID;
             }
@@ -50,10 +48,9 @@ namespace Lab_Csharp
                 txtEmployeeID.Clear();
                 txtEmployeeID.Focus();
             }
-            
-            AlEmployee.Add(employee);
-            btnShow.PerformClick();
 
+            lEmployee.Add(employee);
+            btnShow.PerformClick();
         }
 
         //show
@@ -61,41 +58,41 @@ namespace Lab_Csharp
         {
             labEmployeeData.Text = "員工資料";
 
-            for (int i = 0; i < AlEmployee.Count; i++)
+            for (int i = 0; i < lEmployee.Count; i++)
             {
                 labEmployeeData.Text +=
-                    $"\n員工姓名:{((Employee)AlEmployee[i]).EName} " +
-                    $"\n員工年齡:{((Employee)AlEmployee[i]).EAge} " +
-                    $"\n員工ID:{((Employee)AlEmployee[i]).EID}";
+                    $"\n員工姓名:{lEmployee[i].EName} " +
+                    $"\n員工年齡:{lEmployee[i].EAge} " +
+                    $"\n員工ID:{lEmployee[i].EID}";
             }
         }
 
         //insert
         private void btnInsert_Click(object sender, EventArgs e)
         {
-            AlEmployee.Insert(0,employee);
+            lEmployee.Insert(0, employee);
             btnShow.PerformClick();
         }
 
         //clear
         private void btnClear_Click(object sender, EventArgs e)
         {
-            AlEmployee.Clear();
+            lEmployee.Clear();
             btnShow.PerformClick();
         }
 
         //remove at
         private void btnRemoveAt_Click(object sender, EventArgs e)
         {
-            AlEmployee.RemoveAt(0);
+            lEmployee.RemoveAt(0);
             btnShow.PerformClick();
         }
 
-        //add different type elements
-        private void btnAddDiffType_Click(object sender, EventArgs e)
-        {
-            AlEmployee.Add("addString");
-            AlEmployee.Add(101010);
-        }
+        //add different type elements : error
+        //private void btnAddDiffType_Click(object sender, EventArgs e)
+        //{
+        //    lEmployee.Add("addString");
+        //    lEmployee.Add(101010);
+        //}
     }
 }

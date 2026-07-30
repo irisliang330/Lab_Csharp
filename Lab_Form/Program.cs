@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Lab_Csharp;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -23,8 +24,8 @@ namespace Lab_Form
             //Application.Run(new Frm_M15_struct("多載"));
             //Application.Run(new Frm_M17_Operator());
             //Application.Run(new Frm_M19_Array());
-            Application.Run(new Frm_M21_Overload());
-
+            //Application.Run(new Frm_M21_Overload());
+            Application.Run(new Frm_M22_ArrayList());
             //Application.Run(new Frm_HelloForm());
 
 

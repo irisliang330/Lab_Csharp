@@ -32,6 +32,7 @@
             this.btnSwapString = new System.Windows.Forms.Button();
             this.btnGenericSwap = new System.Windows.Forms.Button();
             this.btnGenericSwapOverload = new System.Windows.Forms.Button();
+            this.btnOptionalParam = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnSwapInt
@@ -74,11 +75,22 @@
             this.btnGenericSwapOverload.UseVisualStyleBackColor = true;
             this.btnGenericSwapOverload.Click += new System.EventHandler(this.btnGenericSwapOverloda_Click);
             // 
+            // btnOptionalParam
+            // 
+            this.btnOptionalParam.Location = new System.Drawing.Point(257, 109);
+            this.btnOptionalParam.Name = "btnOptionalParam";
+            this.btnOptionalParam.Size = new System.Drawing.Size(109, 50);
+            this.btnOptionalParam.TabIndex = 0;
+            this.btnOptionalParam.Text = "選擇性參數";
+            this.btnOptionalParam.UseVisualStyleBackColor = true;
+            this.btnOptionalParam.Click += new System.EventHandler(this.btnOptionalParam_Click);
+            // 
             // Frm_M21_Overload
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnOptionalParam);
             this.Controls.Add(this.btnGenericSwapOverload);
             this.Controls.Add(this.btnGenericSwap);
             this.Controls.Add(this.btnSwapString);
@@ -95,5 +107,6 @@
         private System.Windows.Forms.Button btnSwapString;
         private System.Windows.Forms.Button btnGenericSwap;
         private System.Windows.Forms.Button btnGenericSwapOverload;
+        private System.Windows.Forms.Button btnOptionalParam;
     }
 }

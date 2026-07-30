@@ -38,6 +38,9 @@
             this.btnInsert = new System.Windows.Forms.Button();
             this.btnClear = new System.Windows.Forms.Button();
             this.btnRemoveAt = new System.Windows.Forms.Button();
+            this.txtEmployeeID = new System.Windows.Forms.TextBox();
+            this.labEmployeeID = new System.Windows.Forms.Label();
+            this.btnAddDiffType = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtEmployeeName
@@ -90,6 +93,7 @@
             this.btnAdd.TabIndex = 4;
             this.btnAdd.Text = "Add";
             this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // btnShow
             // 
@@ -101,6 +105,7 @@
             this.btnShow.TabIndex = 5;
             this.btnShow.Text = "Show";
             this.btnShow.UseVisualStyleBackColor = true;
+            this.btnShow.Click += new System.EventHandler(this.btnShow_Click);
             // 
             // labEmployeeData
             // 
@@ -125,6 +130,7 @@
             this.btnInsert.TabIndex = 7;
             this.btnInsert.Text = "Insert";
             this.btnInsert.UseVisualStyleBackColor = true;
+            this.btnInsert.Click += new System.EventHandler(this.btnInsert_Click);
             // 
             // btnClear
             // 
@@ -136,6 +142,7 @@
             this.btnClear.TabIndex = 8;
             this.btnClear.Text = "Clear";
             this.btnClear.UseVisualStyleBackColor = true;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // btnRemoveAt
             // 
@@ -147,6 +154,39 @@
             this.btnRemoveAt.TabIndex = 9;
             this.btnRemoveAt.Text = "RemoveAt";
             this.btnRemoveAt.UseVisualStyleBackColor = true;
+            this.btnRemoveAt.Click += new System.EventHandler(this.btnRemoveAt_Click);
+            // 
+            // txtEmployeeID
+            // 
+            this.txtEmployeeID.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.txtEmployeeID.Location = new System.Drawing.Point(90, 141);
+            this.txtEmployeeID.Margin = new System.Windows.Forms.Padding(2);
+            this.txtEmployeeID.Name = "txtEmployeeID";
+            this.txtEmployeeID.Size = new System.Drawing.Size(104, 25);
+            this.txtEmployeeID.TabIndex = 2;
+            // 
+            // labEmployeeID
+            // 
+            this.labEmployeeID.AutoSize = true;
+            this.labEmployeeID.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.labEmployeeID.Location = new System.Drawing.Point(9, 141);
+            this.labEmployeeID.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labEmployeeID.Name = "labEmployeeID";
+            this.labEmployeeID.Size = new System.Drawing.Size(54, 17);
+            this.labEmployeeID.TabIndex = 3;
+            this.labEmployeeID.Text = "員工ID: ";
+            // 
+            // btnAddDiffType
+            // 
+            this.btnAddDiffType.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.btnAddDiffType.Location = new System.Drawing.Point(55, 294);
+            this.btnAddDiffType.Margin = new System.Windows.Forms.Padding(2);
+            this.btnAddDiffType.Name = "btnAddDiffType";
+            this.btnAddDiffType.Size = new System.Drawing.Size(139, 31);
+            this.btnAddDiffType.TabIndex = 5;
+            this.btnAddDiffType.Text = "加入不同型別的元素";
+            this.btnAddDiffType.UseVisualStyleBackColor = true;
+            this.btnAddDiffType.Click += new System.EventHandler(this.btnAddDiffType_Click);
             // 
             // Frm_M22_ArrayList
             // 
@@ -157,9 +197,12 @@
             this.Controls.Add(this.btnClear);
             this.Controls.Add(this.btnInsert);
             this.Controls.Add(this.labEmployeeData);
+            this.Controls.Add(this.btnAddDiffType);
             this.Controls.Add(this.btnShow);
             this.Controls.Add(this.btnAdd);
+            this.Controls.Add(this.labEmployeeID);
             this.Controls.Add(this.labEmployeeAge);
+            this.Controls.Add(this.txtEmployeeID);
             this.Controls.Add(this.txtEmployeeAge);
             this.Controls.Add(this.labEmployeeName);
             this.Controls.Add(this.txtEmployeeName);
@@ -183,5 +226,8 @@
         private System.Windows.Forms.Button btnInsert;
         private System.Windows.Forms.Button btnClear;
         private System.Windows.Forms.Button btnRemoveAt;
+        private System.Windows.Forms.TextBox txtEmployeeID;
+        private System.Windows.Forms.Label labEmployeeID;
+        private System.Windows.Forms.Button btnAddDiffType;
     }
 }

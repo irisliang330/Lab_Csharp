@@ -102,6 +102,15 @@ namespace Lab_Form
             D = temp2;
         }
 
+        //21-9 Optional param
+        void UsingOptionalParam(int Top, string Name, string ID = "A00")
+        {
 
+        }
+
+        private void btnOptionalParam_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
