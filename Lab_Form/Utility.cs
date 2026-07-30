@@ -48,4 +48,11 @@ namespace Lab_Form
         public decimal ProductPrice { get; set; }
 
     }
+
+    //22-3 ArrayList
+    public class Employee
+    {
+        public string EmployerName;
+        public int EmployeeAge;
+    }
 }

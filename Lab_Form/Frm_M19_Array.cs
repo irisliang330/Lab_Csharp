@@ -67,7 +67,6 @@ namespace Lab_Form
             MessageBox.Show(arrResult);
         }
 
-
         Random rand = new Random(123);
 
         int[] GetRandomArray(int ArrayLength)
@@ -80,13 +79,16 @@ namespace Lab_Form
             }
 
             //Fisher Yates Shuffle
-            for (int i = arr.Length - 1; i > 0; i--)
+            for (int i = arr.GetUpperBound(0); i > 0; i--)
             {
-                // j:0~i
-                int j = rand.Next(i + 1);
+                // r:0~i
+                int r = rand.Next(i + 1);
 
-                // swap index i and j
-                (arr[i], arr[j]) = (arr[j], arr[i]);
+                // swap index i and r
+                int temp = arr[i];
+                arr[i] = arr[r];
+                arr[r] = temp;
+                
             }
 
             ////rand diff num from teacher
